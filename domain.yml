@@ -8,6 +8,7 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - what_is_tingsapp 
 
 responses:
   utter_greet:
@@ -27,7 +28,10 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a bot, powered by Tingsapp."
+
+  utter_what_is_tingsapp:
+  - text: "Tingsapp is a moving platform that helps customers book movers and get a pre-calculated price for their move."
 
 session_config:
   session_expiration_time: 60
