@@ -28,3 +28,153 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: nlu_fallback
+  - intent: ask_how_are_you
+  - action: action_respond_how_you_doing
+
+- story: inquire about weather
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_weather
+    - action: utter_ask_weather
+
+- story: respond to Tingsapp question
+  steps:
+  - intent: ask_tingsapp
+  - action: utter_ask_tingsapp
+
+- story: respond to Tingsapp service area
+  steps:
+  - intent: ask_service_area
+  - action: utter_ask_service_area
+  
+- story: Answer what is Tingsapp
+  steps:
+    - intent: ask_tingsapp
+    - action: utter_tingsapp
+
+- story: Answer how it works
+  steps:
+    - intent: ask_how_it_works
+    - action: utter_how_it_works
+
+- story: Answer move cost
+  steps:
+    - intent: ask_cost
+    - action: utter_cost
+
+- story: Answer if Tingsapp operates in my city
+  steps:
+    - intent: ask_operate_city
+    - action: utter_operate_city
+
+- story: Answer long-distance moving services
+  steps:
+    - intent: ask_long_distance
+    - action: utter_long_distance
+
+- story: Answer account required
+  steps:
+    - intent: ask_account_required
+    - action: utter_account_required
+
+- story: Answer booking time
+  steps:
+    - intent: ask_booking_time
+    - action: utter_booking_time
+
+- story: Answer price before booking
+  steps:
+    - intent: ask_price_before_booking
+    - action: utter_price_before_booking
+
+- story: Answer specific items move
+  steps:
+    - intent: ask_specific_items
+    - action: utter_specific_items
+
+- story: Answer unmoved items
+  steps:
+    - intent: ask_unmoved_items
+    - action: utter_unmoved_items
+
+- story: Answer who are the movers
+  steps:
+    - intent: ask_movers
+    - action: utter_movers
+
+- story: Answer specific mover request
+  steps:
+    - intent: ask_specific_mover
+    - action: utter_specific_mover
+
+- story: Answer packing help
+  steps:
+    - intent: ask_packing_help
+    - action: utter_packing_help
+
+- story: Answer appliance installation
+  steps:
+    - intent: ask_install_appliances
+    - action: utter_install_appliances
+
+- story: Answer furniture disassemble/assemble
+  steps:
+    - intent: ask_disassemble_assemble
+    - action: utter_disassemble_assemble
+
+- story: Answer moving equipment
+  steps:
+    - intent: ask_equipment
+    - action: utter_equipment
+
+- story: Answer how to contact movers
+  steps:
+    - intent: ask_contact_movers
+    - action: utter_contact_movers
+
+- story: Answer insurance certificate
+  steps:
+    - intent: ask_insurance_certificate
+    - action: utter_insurance_certificate
+
+- story: Answer damaged items
+  steps:
+    - intent: ask_damaged_items
+    - action: utter_damaged_items
+
+- story: Answer how to change order
+  steps:
+    - intent: ask_change_order
+    - action: utter_change_order
+
+- story: Answer move cancellation
+  steps:
+    - intent: ask_cancel_move
+    - action: utter_cancel_move
+
+- story: Answer operation hours
+  steps:
+    - intent: ask_operation_hours
+    - action: utter_operation_hours
+
+- story: Answer payment time
+  steps:
+    - intent: ask_payment_time
+    - action: utter_payment_time
+
+- story: Answer cash payment
+  steps:
+    - intent: ask_cash_payment
+    - action: utter_cash_payment
+
+- story: Answer tipping movers
+  steps:
+    - intent: ask_tipping
+    - action: utter_tipping

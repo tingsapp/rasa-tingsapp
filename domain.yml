@@ -1,34 +1,144 @@
-version: "3.1"
-
+version: '3.1'
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+- affirm
+- ask_how_are_you
+- bot_challenge
+- deny
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- ask_weather
+- ask_service_area
+- ask_tingsapp
+- ask_how_it_works
+- ask_cost
+- ask_operate_city
+- ask_long_distance
+- ask_account_required
+- ask_booking_time
+- ask_price_before_booking
+- ask_specific_items
+- ask_unmoved_items
+- ask_movers
+- ask_specific_mover
+- ask_packing_help
+- ask_install_appliances
+- ask_disassemble_assemble
+- ask_equipment
+- ask_contact_movers
+- ask_insurance_certificate
+- ask_damaged_items
+- ask_change_order
+- ask_cancel_move
+- ask_operation_hours
+- ask_payment_time
+- ask_cash_payment
+- ask_tipping
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
+  - text: Hey! How are you?
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
   utter_did_that_help:
-  - text: "Did that help you?"
-
+  - text: Did that help you?
   utter_happy:
-  - text: "Great, carry on!"
-
+  - text: Great, carry on!
   utter_goodbye:
-  - text: "Bye"
-
+  - text: Bye
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: I am a bot, powered by Rasa.
+  utter_ask_weather:
+  - text: "Sure, I can help you with that. What city are you interested in?"
+  utter_ask_tingsapp:
+  - text: Tingsapp is a moving platform where movers are connected to people looking for moving services in their local area.
+  utter_ask_service_area: 
+    - text: "Tingsapp serves the following cities: Abbotsford, Chilliwack, Delta, Maple Ridge, North Vancouver, Port Coquitlam, Richmond, Vancouver, White Rock, Burnaby, Coquitlam, Langley, New Westminster, Pitt Meadows, Port Moody, Surrey, West Vancouver."
+  utter_tingsapp:
+    - text: "Tingsapp is a moving company."
+  utter_how_it_works:
+    - text: "Tell us about your move and our system will match you with available movers. You'll see the cost upfront before booking. After scheduling your move, you can communicate directly with your movers through our app. On moving day, they'll show up at the scheduled time and move your stuff to your new place. Once the job is complete, you'll be notified of any comments and have the option to leave a tip for your movers."
+  utter_cost:
+    - text: "The cost of a move depends on factors such as the size of the move, distance, time spent loading and unloading, and if there are stairs involved."
+  utter_operate_city:
+    - text: "Currently, we are operating in Vancouver and the lower mainland in British Colombia. Here is the list of cities we cover."
+  utter_long_distance:
+    - text: "As of now, we only do moving within the same cities or metro areas."
+  utter_account_required:
+    - text: "No, you are not required to sign up to schedule a move. However, the system will automatically create an account for a new booking so that you can track your order and contact your mover in case you need to."
+  utter_booking_time:
+    - text: "Our data shows that customers spend under a minute on average placing an order on Tingsapp."
+  utter_price_before_booking:
+    - text: "Sure, that’s one of our principles to make moving more transparent."
+  utter_specific_items:
+    - text: "Yes, in the order process, you must choose “A few items” under the type of moving and add your items."
+  utter_unmoved_items:
+    - text: "We're happy to help you move most household items that can be handled by two people. However, for safety and liability reasons, there are a few things we're unable to move. This includes items such as pianos, organs, safes, jukeboxes, kegs and alcohol, pool tables, live animals, and anything that needs to be hoisted over a balcony."
+  utter_movers:
+    - text: "Movers are independent contractors. All the movers are hand-picked and background-checked to ensure the quality of service they provide."
+  utter_specific_mover:
+    - text: "Unfortunately, the system will not let you choose your movers. But we assure you that all the movers on the platform are vetted and qualified for the job."
+  utter_packing_help:
+    - text: "Movers will not help pack boxes. It is expected that you will have everything packed and ready for transport before your mover(s) arrive."
+  utter_install_appliances:
+    - text: "We do not offer installation or removal of any appliances. We will also not hook appliances up to, or remove them from, water or gas lines. We also do not mount televisions."
+  utter_disassemble_assemble:
+    - text: "Well, technically, no. However, the movers have some essential tools to disassemble some large items in case they won’t fit the vehicle or are hard to load and unload. They will ask your permission before doing so."
+  utter_equipment:
+    - text: "All movers are equipped with furniture dollies, moving blankets, tie-downs, straps, and plastic wraps as well as a basic toolkit for moves that require assembly or breakdown."
+  utter_contact_movers:
+    - text: "Once the move is booked, and movers are assigned. You can contact them via the app."
+  utter_insurance_certificate:
+    - text: "Yes, we do. Send us an email to support@tingsapp.com for a copy of our insurance certificate to share with your landlord."
+  utter_damaged_items:
+    - text: "Your price includes basic damage protection. Your items are covered up to 60 cents per pound per item. This is the minimum coverage required by law. If you would like additional coverage, please contact your home/tenant insurance provider."
+  utter_change_order:
+    - text: "On the Tingsapp website or mobile application, go to My moves and provide the phone number used while placing the order. After verification, you will be directed to your order. Under the detail of your specific order, you have the option to edit or cancel your order."
+  utter_cancel_move:
+    - text: "Yes, you can cancel your order for free up to 24 hours before the scheduled date. However, if you cancel within 24 hours of the scheduled time, there will be a 20% cancellation fee based on the total cost. If your movers have already arrived at the first location and cannot complete the move due to reasons outside of their control or due to rescheduling or cancellation, a 50% cancellation fee will apply."
+  utter_operation_hours:
+    - text: "Tingsapp is available 24/7 for bookings, but movers can only be scheduled during business hours from Monday to Sunday."
+  utter_payment_time:
+    - text: "When you place an order, there will be a nominal hold on your credit card, and the total amount will be charged after the move is completed."
+  utter_cash_payment:
+    - text: "We only allow customers to pay through the app or on the website. We accept all major credit cards. Our payment system is secure and encrypted."
+  utter_tipping:
+    - text: "Sure, you can. After the completion of the job, we will notify you on the app for tips and reviews. Alternatively, you can tip your movers in cash if you may want. 100% of the tip goes to the movers."
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+actions:
+- utter_greet
+- action_respond_how_you_doing
+- utter_ask_weather
+- utter_ask_tingsapp
+- utter_ask_service_area
+- utter_tingsapp
+- utter_how_it_works
+- utter_cost
+- utter_operate_city
+- utter_long_distance
+- utter_account_required
+- utter_booking_time
+- utter_price_before_booking
+- utter_specific_items
+- utter_unmoved_items
+- utter_movers
+- utter_specific_mover
+- utter_packing_help
+- utter_install_appliances
+- utter_disassemble_assemble
+- utter_equipment
+- utter_contact_movers
+- utter_insurance_certificate
+- utter_damaged_items
+- utter_change_order
+- utter_cancel_move
+- utter_operation_hours
+- utter_payment_time
+- utter_cash_payment
+- utter_tipping

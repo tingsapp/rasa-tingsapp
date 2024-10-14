@@ -1,5 +1,4 @@
 version: "3.1"
-
 nlu:
 - intent: greet
   examples: |
@@ -16,7 +15,6 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
 - intent: goodbye
   examples: |
     - cu
@@ -29,7 +27,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -38,7 +35,6 @@ nlu:
     - of course
     - that sounds good
     - correct
-
 - intent: deny
   examples: |
     - no
@@ -48,7 +44,6 @@ nlu:
     - don't like that
     - no way
     - not really
-
 - intent: mood_great
   examples: |
     - perfect
@@ -65,7 +60,6 @@ nlu:
     - so so perfect
     - so good
     - so perfect
-
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -82,10 +76,180 @@ nlu:
     - extremly sad
     - so saad
     - so sad
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+- intent: ask_how_are_you
+  examples: |
+    - how you doing
+    - how you feel
+- intent: ask_weather
+  examples: |
+    - What's the weather like today?
+    - Can you tell me the weather forecast?
+    - What's the weather in [New York]?
+- intent: ask_tingsapp
+  examples: |
+    - What is Tingsapp?
+    - Can you tell me about Tingsapp?
+    - What does Tingsapp do?
+- intent: ask_service_area
+  examples: |
+    - What cities do you serve?
+    - Where can Tingsapp help me move?
+    - What are your service areas?
+    - List the cities you operate in.
+- intent: ask_tingsapp
+  examples: |
+    - What is Tingsapp?
+    - Can you tell me about Tingsapp?
+    - What does Tingsapp do?
+
+- intent: ask_how_it_works
+  examples: |
+    - How it works?
+    - Can you explain how it works?
+    - How does Tingsapp work?
+
+- intent: ask_cost
+  examples: |
+    - How much does a move cost?
+    - What is the cost of a move?
+    - Can you tell me the price for a move?
+
+- intent: ask_operate_city
+  examples: |
+    - Does Tingsapp operate in my city?
+    - Where does Tingsapp operate?
+    - What cities does Tingsapp serve?
+
+- intent: ask_long_distance
+  examples: |
+    - Does Tingsapp offer long-distance moving services?
+    - Do you do long-distance moves?
+
+- intent: ask_account_required
+  examples: |
+    - Do I need to have an account to schedule a move?
+    - Is an account required to book a move?
+
+- intent: ask_booking_time
+  examples: |
+    - How long does it take to book a request?
+    - How fast can I book a move?
+    - How much time does booking take?
+
+- intent: ask_price_before_booking
+  examples: |
+    - Can I see my price before booking?
+    - Can I check the price before booking?
+    - Is the price available before booking?
+
+- intent: ask_specific_items
+  examples: |
+    - Can I schedule a move for my bed and sofa only?
+    - Can I move just my bed and sofa?
+    - Is it possible to book only a few items?
+
+- intent: ask_unmoved_items
+  examples: |
+    - What items Tingsapp won’t move?
+    - Are there items you don't move?
+    - What can't be moved with Tingsapp?
+
+- intent: ask_movers
+  examples: |
+    - Who are Tingsapp movers?
+    - Who will help me move?
+    - Tell me about the movers.
+
+- intent: ask_specific_mover
+  examples: |
+    - Can I request a specific mover?
+    - Can I choose my mover?
+    - Can I ask for a certain mover?
+
+- intent: ask_packing_help
+  examples: |
+    - Do the movers help me to pack my items?
+    - Can the movers help with packing?
+    - Will the movers pack my belongings?
+
+- intent: ask_install_appliances
+  examples: |
+    - Will the movers install my appliances?
+    - Can the movers install appliances?
+    - Do movers help with appliance installation?
+
+- intent: ask_disassemble_assemble
+  examples: |
+    - Will the movers disassemble/assemble my items?
+    - Can movers assemble/disassemble items?
+    - Do movers help with furniture assembly?
+
+- intent: ask_equipment
+  examples: |
+    - What kind of moving equipment will movers bring with them?
+    - What equipment will the movers use?
+    - What tools do the movers bring?
+
+- intent: ask_contact_movers
+  examples: |
+    - How do I contact my movers?
+    - Can I reach my movers directly?
+    - How do I talk to my movers?
+
+- intent: ask_insurance_certificate
+  examples: |
+    - Can Tingsapp provide a certificate of insurance for my building?
+    - Can I get an insurance certificate?
+    - Will you provide a certificate of insurance?
+
+- intent: ask_damaged_items
+  examples: |
+    - What if my items are damaged during the move?
+    - What happens if something breaks during the move?
+    - Who is responsible for damaged items?
+
+- intent: ask_change_order
+  examples: |
+    - How do I bring changes to my order?
+    - Can I modify my order?
+    - How do I change my booking?
+
+- intent: ask_cancel_move
+  examples: |
+    - Can I cancel my move?
+    - How do I cancel my booking?
+    - Can I cancel the move after booking?
+
+- intent: ask_operation_hours
+  examples: |
+    - What hours does Tingsapp operate?
+    - What are the working hours of Tingsapp?
+    - When is Tingsapp open?
+
+- intent: ask_payment_time
+  examples: |
+    - When do I pay for my move?
+    - What is the payment schedule?
+    - When is payment due for the move?
+
+- intent: ask_cash_payment
+  examples: |
+    - Can I pay in cash?
+    - Is cash payment allowed?
+    - Can I pay movers in cash?
+
+- intent: ask_tipping
+  examples: |
+    - Can I tip my movers?
+    - Is tipping allowed?
+    - Can I give tips to the movers?
+
+
+
+
