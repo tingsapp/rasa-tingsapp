@@ -7,6 +7,8 @@ module.exports = {
       interpreter: '/var/www/html/rasa-tingsapp/venv/bin/python',
       env: {
         NODE_ENV: 'production',
+        PATH: '/var/www/html/rasa-tingsapp/venv/bin:$PATH',
+        VIRTUAL_ENV: '/var/www/html/rasa-tingsapp/venv',
       },
     },
   ],
