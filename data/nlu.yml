@@ -82,6 +82,12 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+- intent: ask_ok
+  examples: |
+    - ok
+    - thank you for your help
+    - great
+    - fine
 - intent: ask_how_are_you
   examples: |
     - how you doing

@@ -54,6 +54,11 @@ stories:
   - intent: ask_service_area
   - action: utter_ask_service_area
   
+- story: respond to ok
+  steps: 
+  - intent: ask_ok
+  - action: utter_ask_ok
+
 - story: Answer what is Tingsapp
   steps:
     - intent: ask_tingsapp

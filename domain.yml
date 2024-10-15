@@ -9,6 +9,7 @@ intents:
 - mood_great
 - mood_unhappy
 - ask_weather
+- ask_ok
 - ask_service_area
 - ask_tingsapp
 - ask_how_it_works
@@ -52,6 +53,8 @@ responses:
   - text: I am a bot, powered by Rasa.
   utter_ask_weather:
   - text: "Sure, I can help you with that. What city are you interested in?"
+  utter_ask_ok:
+  - text: "Is there anything else I can help you with?"
   utter_ask_tingsapp:
   - text: Tingsapp is a moving platform where movers are connected to people looking for moving services in their local area.
   utter_ask_service_area: 
