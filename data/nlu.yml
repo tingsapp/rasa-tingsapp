@@ -82,16 +82,28 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+# - intent: inquire_time
+#   examples: |
+#     - what time is it?
+#     - what time is it in [Amsterdam](place)
+#     - what time is it in [London](place)
+#     - tell me the time in [Lisbon](place)
+#     - what is the current time in [Berlin](place)
+#     - what time is it in [amsterdam](place)
+# - lookup: place
+#   examples: |
+#     - brussels
+#     - zagreb
+#     - london
+#     - lisbon
+#     - amsterdam
+#     - seattle
 - intent: ask_ok
   examples: |
     - ok
     - thank you for your help
     - great
     - fine
-- intent: ask_how_are_you
-  examples: |
-    - how you doing
-    - how you feel
 - intent: ask_weather
   examples: |
     - What's the weather like today?
@@ -255,6 +267,15 @@ nlu:
     - Can I tip my movers?
     - Is tipping allowed?
     - Can I give tips to the movers?
+  
+- intent: ask_tingsapp_mission
+  examples: |
+    - what is tingsapp mission?
+    - tell me about tingsapp mission?
+    - tingsapp misstion
+    - what is tingsapp goal?
+    - tell me about tingsapp goal?
+    - tingsapp goal
 
 
 

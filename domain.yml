@@ -8,6 +8,7 @@ intents:
 - greet
 - mood_great
 - mood_unhappy
+# - inquire_time
 - ask_weather
 - ask_ok
 - ask_service_area
@@ -36,7 +37,16 @@ intents:
 - ask_payment_time
 - ask_cash_payment
 - ask_tipping
-
+- ask_tingsapp_mission
+# entities: 
+# - place
+# slots: 
+#   location:
+#     type: text
+#     influence_conversation: true
+#     mappings:
+#       - type: from_entity
+#         entity: place
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -109,6 +119,8 @@ responses:
     - text: "We only allow customers to pay through the app or on the website. We accept all major credit cards. Our payment system is secure and encrypted."
   utter_tipping:
     - text: "Sure, you can. After the completion of the job, we will notify you on the app for tips and reviews. Alternatively, you can tip your movers in cash if you may want. 100% of the tip goes to the movers."
+  utter_tingsapp_mission:
+    - text: "We aim to provide a comprehensive and user-friendly platform for booking and coordinating moving services, backed by latest technology and around the clock quality customer service and support. Our goal is to become the go-to destination for individuals and businesses seeking reliable and cost-effective moving solutions. Through our commitment to customer satisfaction and innovation, we strive to set the standard for excellence in the moving industry."
 
 session_config:
   session_expiration_time: 60
@@ -116,7 +128,6 @@ session_config:
 
 actions:
 - utter_greet
-- action_respond_how_you_doing
 - utter_ask_weather
 - utter_ask_tingsapp
 - utter_ask_service_area
@@ -145,3 +156,6 @@ actions:
 - utter_payment_time
 - utter_cash_payment
 - utter_tipping
+# - action_tell_time
+- utter_tingsapp_mission
+

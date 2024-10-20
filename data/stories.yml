@@ -29,14 +29,6 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: nlu_fallback
-  - intent: ask_how_are_you
-  - action: action_respond_how_you_doing
-
 - story: inquire about weather
   steps:
     - intent: greet
@@ -183,3 +175,8 @@ stories:
   steps:
     - intent: ask_tipping
     - action: utter_tipping
+
+- story: Answer tingsapp mission
+  steps:
+    - intent: ask_tingsapp_mission
+    - action: utter_tingsapp_mission
