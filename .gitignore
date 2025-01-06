@@ -1,0 +1,13 @@
+# Ignore Rasa training artifacts
+models/
+*.db
+__pycache__/
+*.pyc
+.rasa/
+.rasa/cache/
+.rasa/cache/cache.db
+actions/__pycache__/actions.cpython-37.pyc
+*.lock
+# Ignore temporary JSON and Pickle files
+*.json
+*.pkl
