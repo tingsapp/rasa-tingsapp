@@ -1,18 +1,13 @@
 version: "3.1"
 
 rules:
-
-- rule: Say goodbye anytime the user says goodbye
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
-
-# - rule: Tell the time
-#   steps: 
-#   - intent: inquire_time
-#   - action: action_tell_time
+- rule: Question user asked is out of scope
+  steps: 
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  

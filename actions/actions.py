@@ -63,4 +63,3 @@
 #         msg = f"It's {utc.to(city_db[current_place]).format('HH:mm')} in {current_place} now."
 #         dispatcher.utter_message(text=msg)
 #         return [SlotSet('place', None)]  # Reset the slot
-

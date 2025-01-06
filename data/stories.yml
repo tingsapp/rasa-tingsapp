@@ -1,182 +1,111 @@
 version: "3.1"
 
 stories:
-
-- story: happy path
+- story: User says hi 
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
 
-- story: sad path 1
+- story: User says good bye
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
+  - intent: goodbye
   - action: utter_goodbye
 
-- story: inquire about weather
+- story: User ask about tingsapp
   steps:
-    - intent: greet
-    - action: utter_greet
-    - intent: ask_weather
-    - action: utter_ask_weather
+  - intent: about_tingsapp
+  - action: utter_about_tingsapp
 
-- story: respond to Tingsapp question
+- story: User ask about tingsapp story
   steps:
-  - intent: ask_tingsapp
-  - action: utter_ask_tingsapp
+  - intent: tingsapp_story
+  - action: utter_tingsapp_story
 
-- story: respond to Tingsapp service area
+- story: User ask about tingsapp history
   steps:
-  - intent: ask_service_area
-  - action: utter_ask_service_area
-  
-- story: respond to ok
+  - intent: tingsapp_history
+  - action: utter_tingsapp_history
+
+- story: User ask about tingsapp mission
   steps: 
-  - intent: ask_ok
-  - action: utter_ask_ok
+  - intent: tingsapp_mission
+  - action: utter_tingsapp_mission
 
-- story: Answer what is Tingsapp
+- story: User ask about tingsapp vision
   steps:
-    - intent: ask_tingsapp
-    - action: utter_tingsapp
+  - intent: tingsapp_vision
+  - action: utter_tingsapp_vision
 
-- story: Answer how it works
+- story: User ask about tingsapp features
   steps:
-    - intent: ask_how_it_works
-    - action: utter_how_it_works
+  - intent: tingsapp_features
+  - action: utter_tingsapp_features
 
-- story: Answer move cost
+- story: User ask about tingsapp team
   steps:
-    - intent: ask_cost
-    - action: utter_cost
+  - intent: tingsapp_team
+  - action: utter_tingsapp_team
 
-- story: Answer if Tingsapp operates in my city
+- story: User ask about tingsapp values
+  steps: 
+  - intent: tingsapp_values
+  - action: utter_tingsapp_values
+- story: Tingsapp location inquiry
   steps:
-    - intent: ask_operate_city
-    - action: utter_operate_city
+    - intent: tingsapp_location
+    - action: utter_tingsapp_location
 
-- story: Answer long-distance moving services
+- story: Tingsapp impact inquiry
   steps:
-    - intent: ask_long_distance
-    - action: utter_long_distance
+    - intent: tingsapp_impact
+    - action: utter_tingsapp_impact
 
-- story: Answer account required
+- story: Tingsapp affiliates inquiry
   steps:
-    - intent: ask_account_required
-    - action: utter_account_required
+    - intent: tingsapp_affiliates
+    - action: utter_tingsapp_affiliates
 
-- story: Answer booking time
+- story: Tingsapp philosophy inquiry
   steps:
-    - intent: ask_booking_time
-    - action: utter_booking_time
+    - intent: tingsapp_philosophy
+    - action: utter_tingsapp_philosophy
 
-- story: Answer price before booking
+- story: Why Tingsapp inquiry
   steps:
-    - intent: ask_price_before_booking
-    - action: utter_price_before_booking
+    - intent: why_tingsapp
+    - action: utter_why_tingsapp
 
-- story: Answer specific items move
+- story: Customer feedback inquiry
   steps:
-    - intent: ask_specific_items
-    - action: utter_specific_items
+    - intent: tingsapp_customer_feedback
+    - action: utter_tingsapp_customer_feedback
 
-- story: Answer unmoved items
+- story: Tingsapp name inquiry
   steps:
-    - intent: ask_unmoved_items
-    - action: utter_unmoved_items
+    - intent: tingsapp_name
+    - action: utter_tingsapp_name
 
-- story: Answer who are the movers
+- story: Terms of service inquiry
   steps:
-    - intent: ask_movers
-    - action: utter_movers
+    - intent: tingsapp_terms
+    - action: utter_tingsapp_terms
 
-- story: Answer specific mover request
+- story: Privacy policy inquiry
   steps:
-    - intent: ask_specific_mover
-    - action: utter_specific_mover
+    - intent: tingsapp_privacy
+    - action: utter_tingsapp_privacy
 
-- story: Answer packing help
+- story: Booking process inquiry
   steps:
-    - intent: ask_packing_help
-    - action: utter_packing_help
+    - intent: booking_process
+    - action: utter_booking_process
 
-- story: Answer appliance installation
+- story: Mover availability inquiry
   steps:
-    - intent: ask_install_appliances
-    - action: utter_install_appliances
+    - intent: mover_availability
+    - action: utter_mover_availability
 
-- story: Answer furniture disassemble/assemble
+- story: Order tracking inquiry
   steps:
-    - intent: ask_disassemble_assemble
-    - action: utter_disassemble_assemble
-
-- story: Answer moving equipment
-  steps:
-    - intent: ask_equipment
-    - action: utter_equipment
-
-- story: Answer how to contact movers
-  steps:
-    - intent: ask_contact_movers
-    - action: utter_contact_movers
-
-- story: Answer insurance certificate
-  steps:
-    - intent: ask_insurance_certificate
-    - action: utter_insurance_certificate
-
-- story: Answer damaged items
-  steps:
-    - intent: ask_damaged_items
-    - action: utter_damaged_items
-
-- story: Answer how to change order
-  steps:
-    - intent: ask_change_order
-    - action: utter_change_order
-
-- story: Answer move cancellation
-  steps:
-    - intent: ask_cancel_move
-    - action: utter_cancel_move
-
-- story: Answer operation hours
-  steps:
-    - intent: ask_operation_hours
-    - action: utter_operation_hours
-
-- story: Answer payment time
-  steps:
-    - intent: ask_payment_time
-    - action: utter_payment_time
-
-- story: Answer cash payment
-  steps:
-    - intent: ask_cash_payment
-    - action: utter_cash_payment
-
-- story: Answer tipping movers
-  steps:
-    - intent: ask_tipping
-    - action: utter_tipping
-
-- story: Answer tingsapp mission
-  steps:
-    - intent: ask_tingsapp_mission
-    - action: utter_tingsapp_mission
+    - intent: order_tracking
+    - action: utter_order_tracking

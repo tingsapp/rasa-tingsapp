@@ -2,281 +2,162 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
     - hi
-    - hello there
+    - hello
+    - hey
     - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
     - good afternoon
+    - good evening
+    - hey there
+    - hi there
+    - hello there
+    - hey bot
+    - hi bot
+    - hello bot
+    - greetings
+    - what's up
+    - howdy
+    - yo
+    - hiya
+    - hey hey
+    - good day
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
     - bye
     - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
+    - see you
     - see you later
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-# - intent: inquire_time
-#   examples: |
-#     - what time is it?
-#     - what time is it in [Amsterdam](place)
-#     - what time is it in [London](place)
-#     - tell me the time in [Lisbon](place)
-#     - what is the current time in [Berlin](place)
-#     - what time is it in [amsterdam](place)
-# - lookup: place
-#   examples: |
-#     - brussels
-#     - zagreb
-#     - london
-#     - lisbon
-#     - amsterdam
-#     - seattle
-- intent: ask_ok
-  examples: |
-    - ok
-    - thank you for your help
-    - great
-    - fine
-- intent: ask_weather
-  examples: |
-    - What's the weather like today?
-    - Can you tell me the weather forecast?
-    - What's the weather in [New York]?
-- intent: ask_tingsapp
+    - catch you later
+    - talk to you later
+    - bye for now
+    - take care
+    - see ya
+    - have a good day
+    - peace out
+    - later
+    - farewell
+
+- intent: about_tingsapp
   examples: |
     - What is Tingsapp?
-    - Can you tell me about Tingsapp?
-    - What does Tingsapp do?
-- intent: ask_service_area
+    - Tell me about Tingsapp.
+    - What do you do at Tingsapp?
+- intent: tingsapp_story
   examples: |
-    - What cities do you serve?
-    - Where can Tingsapp help me move?
-    - What are your service areas?
-    - List the cities you operate in.
-- intent: ask_tingsapp
+    - What’s the story behind Tingsapp?
+    - What is tingsapp story?
+    - Tingsapp story
+- intent: tingsapp_history
   examples: |
-    - What is Tingsapp?
-    - Can you tell me about Tingsapp?
-    - What does Tingsapp do?
+    - When was Tingsapp founded?
+    - What’s the history of Tingsapp?
+    - How long has Tingsapp been around?
+- intent: tingsapp_mission
+  examples: |
+    - What is Tingsapp's mission?
+    - What is the goal of Tingsapp?
+- intent: tingsapp_vision
+  examples: |
+    - What’s Tingsapp’s vision?
+    - What do you envision for Tingsapp in the future?
+- intent: tingsapp_features
+  examples: |
+    - What features does Tingsapp offer to make my move easier?
+    - How does Tingsapp help make my move easier?
+    - What can Tingsapp do to simplify my moving process?
+    - Tell me about tingsapp features.
+- intent: tingsapp_team
+  examples: |
+    - Who is behind Tingsapp?
+    - Who are the people behind Tingsapp?
+    - Tell me about the team at Tingsapp.
+- intent: tingsapp_values
+  examples: |
+    - What values does Tingsapp hold?
+    - What is important to Tingsapp?
+    - What principles does Tingsapp follow?
+- intent: tingsapp_location
+  examples: |
+    - Where is Tingsapp located?
+    - Where are you based?
 
-- intent: ask_how_it_works
+- intent: tingsapp_impact
   examples: |
-    - How it works?
-    - Can you explain how it works?
-    - How does Tingsapp work?
+    - What kind of impact does Tingsapp have?
+    - How does Tingsapp make a difference?
+    - How does Tingsapp impact the community?
 
-- intent: ask_cost
+- intent: tingsapp_affiliates
   examples: |
-    - How much does a move cost?
-    - What is the cost of a move?
-    - Can you tell me the price for a move?
+    - Do you have any affiliates?
+    - Who are Tingsapp’s partners?
+    - Tell me about Tingsapp affiliates.
 
-- intent: ask_operate_city
+- intent: tingsapp_philosophy
   examples: |
-    - Does Tingsapp operate in my city?
-    - Where does Tingsapp operate?
-    - What cities does Tingsapp serve?
+    - What is the philosophy behind Tingsapp?
+    - What drives Tingsapp?
+    - What’s Tingsapp’s approach to business?
 
-- intent: ask_long_distance
+- intent: why_tingsapp
   examples: |
-    - Does Tingsapp offer long-distance moving services?
-    - Do you do long-distance moves?
+    - Why should I choose Tingsapp?
+    - What makes Tingsapp different?
+    - Why is Tingsapp better than other services?
 
-- intent: ask_account_required
+- intent: tingsapp_customer_feedback
   examples: |
-    - Do I need to have an account to schedule a move?
-    - Is an account required to book a move?
+    - What do customers say about Tingsapp?
+    - How do people feel about Tingsapp?
+    - Can I see reviews of Tingsapp?
 
-- intent: ask_booking_time
+- intent: tingsapp_name
   examples: |
-    - How long does it take to book a request?
-    - How fast can I book a move?
-    - How much time does booking take?
+    - What’s the story behind the name?
+    - How did the name Tingsapp come about?
+    - What inspired the name Tingsapp?
 
-- intent: ask_price_before_booking
+- intent: tingsapp_terms
   examples: |
-    - Can I see my price before booking?
-    - Can I check the price before booking?
-    - Is the price available before booking?
+    - Where can I find the terms of service?
+    - How can I access Tingsapp’s terms of service?
+    - Where do I read Tingsapp's terms and conditions?
 
-- intent: ask_specific_items
+- intent: tingsapp_privacy
   examples: |
-    - Can I schedule a move for my bed and sofa only?
-    - Can I move just my bed and sofa?
-    - Is it possible to book only a few items?
+    - What is your privacy policy?
+    - How does Tingsapp protect my data?
 
-- intent: ask_unmoved_items
+- intent: tingsapp_affiliates
   examples: |
-    - What items Tingsapp won’t move?
-    - Are there items you don't move?
-    - What can't be moved with Tingsapp?
+    - Do you have any affiliates?
+    - Who are Tingsapp’s partners?
+    - Tell me about Tingsapp affiliates.
 
-- intent: ask_movers
+- intent: booking_process
   examples: |
-    - Who are Tingsapp movers?
-    - Who will help me move?
-    - Tell me about the movers.
+    - How do I book a move?
+    - What’s the process to schedule a move?
+    - How can I request a mover on Tingsapp?
 
-- intent: ask_specific_mover
+- intent: mover_availability
   examples: |
-    - Can I request a specific mover?
-    - Can I choose my mover?
-    - Can I ask for a certain mover?
-
-- intent: ask_packing_help
-  examples: |
-    - Do the movers help me to pack my items?
-    - Can the movers help with packing?
-    - Will the movers pack my belongings?
-
-- intent: ask_install_appliances
-  examples: |
-    - Will the movers install my appliances?
-    - Can the movers install appliances?
-    - Do movers help with appliance installation?
-
-- intent: ask_disassemble_assemble
-  examples: |
-    - Will the movers disassemble/assemble my items?
-    - Can movers assemble/disassemble items?
-    - Do movers help with furniture assembly?
-
-- intent: ask_equipment
-  examples: |
-    - What kind of moving equipment will movers bring with them?
-    - What equipment will the movers use?
-    - What tools do the movers bring?
-
-- intent: ask_contact_movers
-  examples: |
-    - How do I contact my movers?
-    - Can I reach my movers directly?
-    - How do I talk to my movers?
-
-- intent: ask_insurance_certificate
-  examples: |
-    - Can Tingsapp provide a certificate of insurance for my building?
-    - Can I get an insurance certificate?
-    - Will you provide a certificate of insurance?
-
-- intent: ask_damaged_items
-  examples: |
-    - What if my items are damaged during the move?
-    - What happens if something breaks during the move?
-    - Who is responsible for damaged items?
-
-- intent: ask_change_order
-  examples: |
-    - How do I bring changes to my order?
-    - Can I modify my order?
-    - How do I change my booking?
-
-- intent: ask_cancel_move
-  examples: |
-    - Can I cancel my move?
-    - How do I cancel my booking?
-    - Can I cancel the move after booking?
-
-- intent: ask_operation_hours
-  examples: |
-    - What hours does Tingsapp operate?
+    - Are movers available 24/7?
+    - When can I book a move with Tingsapp?
     - What are the working hours of Tingsapp?
-    - When is Tingsapp open?
 
-- intent: ask_payment_time
+- intent: order_tracking
   examples: |
-    - When do I pay for my move?
-    - What is the payment schedule?
-    - When is payment due for the move?
+    - How do I track my move?
+    - Can I check the status of my move?
+    - Where can I see the progress of my move?
 
-- intent: ask_cash_payment
+- intent: out_of_scope
   examples: |
-    - Can I pay in cash?
-    - Is cash payment allowed?
-    - Can I pay movers in cash?
-
-- intent: ask_tipping
-  examples: |
-    - Can I tip my movers?
-    - Is tipping allowed?
-    - Can I give tips to the movers?
-  
-- intent: ask_tingsapp_mission
-  examples: |
-    - what is tingsapp mission?
-    - tell me about tingsapp mission?
-    - tingsapp misstion
-    - what is tingsapp goal?
-    - tell me about tingsapp goal?
-    - tingsapp goal
-
-
+    - what is the meaning of life?
+    - tell me a joke.
+    - who won the football match yesterday?
+    - can you do my homework?
+    - what's the weather like on Mars?
 
 

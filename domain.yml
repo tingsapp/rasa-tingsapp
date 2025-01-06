@@ -1,43 +1,29 @@
 version: '3.1'
 intents:
-- affirm
-- ask_how_are_you
-- bot_challenge
-- deny
-- goodbye
 - greet
-- mood_great
-- mood_unhappy
-# - inquire_time
-- ask_weather
-- ask_ok
-- ask_service_area
-- ask_tingsapp
-- ask_how_it_works
-- ask_cost
-- ask_operate_city
-- ask_long_distance
-- ask_account_required
-- ask_booking_time
-- ask_price_before_booking
-- ask_specific_items
-- ask_unmoved_items
-- ask_movers
-- ask_specific_mover
-- ask_packing_help
-- ask_install_appliances
-- ask_disassemble_assemble
-- ask_equipment
-- ask_contact_movers
-- ask_insurance_certificate
-- ask_damaged_items
-- ask_change_order
-- ask_cancel_move
-- ask_operation_hours
-- ask_payment_time
-- ask_cash_payment
-- ask_tipping
-- ask_tingsapp_mission
+- goodbye
+- please_rephrase
+- about_tingsapp
+- tingsapp_story
+- tingsapp_history
+- tingsapp_mission
+- tingsapp_vision
+- tingsapp_features
+- tingsapp_team
+- tingsapp_values
+- tingsapp_location
+- tingsapp_impact
+- tingsapp_affiliates
+- tingsapp_philosophy
+- why_tingsapp
+- tingsapp_customer_feedback
+- tingsapp_name
+- tingsapp_terms
+- tingsapp_privacy
+- booking_process
+- mover_availability
+- order_tracking
+
 # entities: 
 # - place
 # slots: 
@@ -47,115 +33,140 @@ intents:
 #     mappings:
 #       - type: from_entity
 #         entity: place
+
 responses:
   utter_greet:
-  - text: Hey! How are you?
-  utter_cheer_up:
-  - text: 'Here is something to cheer you up:'
-    image: https://i.imgur.com/nGF1K8f.jpg
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
+  - text: "Hello! How can I assist you today?"
+  - text: "Hi there! What can I help you with?"
+  - text: "Hey! Let me know how I can help."
   utter_goodbye:
-  - text: Bye
-  utter_iamabot:
-  - text: I am a bot, powered by Rasa.
-  utter_ask_weather:
-  - text: "Sure, I can help you with that. What city are you interested in?"
-  utter_ask_ok:
-  - text: "Is there anything else I can help you with?"
-  utter_ask_tingsapp:
-  - text: Tingsapp is a moving platform where movers are connected to people looking for moving services in their local area.
-  utter_ask_service_area: 
-    - text: "Tingsapp serves the following cities: Abbotsford, Chilliwack, Delta, Maple Ridge, North Vancouver, Port Coquitlam, Richmond, Vancouver, White Rock, Burnaby, Coquitlam, Langley, New Westminster, Pitt Meadows, Port Moody, Surrey, West Vancouver."
-  utter_tingsapp:
-    - text: "Tingsapp is a moving company."
-  utter_how_it_works:
-    - text: "Tell us about your move and our system will match you with available movers. You'll see the cost upfront before booking. After scheduling your move, you can communicate directly with your movers through our app. On moving day, they'll show up at the scheduled time and move your stuff to your new place. Once the job is complete, you'll be notified of any comments and have the option to leave a tip for your movers."
-  utter_cost:
-    - text: "The cost of a move depends on factors such as the size of the move, distance, time spent loading and unloading, and if there are stairs involved."
-  utter_operate_city:
-    - text: "Currently, we are operating in Vancouver and the lower mainland in British Colombia. Here is the list of cities we cover."
-  utter_long_distance:
-    - text: "As of now, we only do moving within the same cities or metro areas."
-  utter_account_required:
-    - text: "No, you are not required to sign up to schedule a move. However, the system will automatically create an account for a new booking so that you can track your order and contact your mover in case you need to."
-  utter_booking_time:
-    - text: "Our data shows that customers spend under a minute on average placing an order on Tingsapp."
-  utter_price_before_booking:
-    - text: "Sure, that’s one of our principles to make moving more transparent."
-  utter_specific_items:
-    - text: "Yes, in the order process, you must choose “A few items” under the type of moving and add your items."
-  utter_unmoved_items:
-    - text: "We're happy to help you move most household items that can be handled by two people. However, for safety and liability reasons, there are a few things we're unable to move. This includes items such as pianos, organs, safes, jukeboxes, kegs and alcohol, pool tables, live animals, and anything that needs to be hoisted over a balcony."
-  utter_movers:
-    - text: "Movers are independent contractors. All the movers are hand-picked and background-checked to ensure the quality of service they provide."
-  utter_specific_mover:
-    - text: "Unfortunately, the system will not let you choose your movers. But we assure you that all the movers on the platform are vetted and qualified for the job."
-  utter_packing_help:
-    - text: "Movers will not help pack boxes. It is expected that you will have everything packed and ready for transport before your mover(s) arrive."
-  utter_install_appliances:
-    - text: "We do not offer installation or removal of any appliances. We will also not hook appliances up to, or remove them from, water or gas lines. We also do not mount televisions."
-  utter_disassemble_assemble:
-    - text: "Well, technically, no. However, the movers have some essential tools to disassemble some large items in case they won’t fit the vehicle or are hard to load and unload. They will ask your permission before doing so."
-  utter_equipment:
-    - text: "All movers are equipped with furniture dollies, moving blankets, tie-downs, straps, and plastic wraps as well as a basic toolkit for moves that require assembly or breakdown."
-  utter_contact_movers:
-    - text: "Once the move is booked, and movers are assigned. You can contact them via the app."
-  utter_insurance_certificate:
-    - text: "Yes, we do. Send us an email to support@tingsapp.com for a copy of our insurance certificate to share with your landlord."
-  utter_damaged_items:
-    - text: "Your price includes basic damage protection. Your items are covered up to 60 cents per pound per item. This is the minimum coverage required by law. If you would like additional coverage, please contact your home/tenant insurance provider."
-  utter_change_order:
-    - text: "On the Tingsapp website or mobile application, go to My moves and provide the phone number used while placing the order. After verification, you will be directed to your order. Under the detail of your specific order, you have the option to edit or cancel your order."
-  utter_cancel_move:
-    - text: "Yes, you can cancel your order for free up to 24 hours before the scheduled date. However, if you cancel within 24 hours of the scheduled time, there will be a 20% cancellation fee based on the total cost. If your movers have already arrived at the first location and cannot complete the move due to reasons outside of their control or due to rescheduling or cancellation, a 50% cancellation fee will apply."
-  utter_operation_hours:
-    - text: "Tingsapp is available 24/7 for bookings, but movers can only be scheduled during business hours from Monday to Sunday."
-  utter_payment_time:
-    - text: "When you place an order, there will be a nominal hold on your credit card, and the total amount will be charged after the move is completed."
-  utter_cash_payment:
-    - text: "We only allow customers to pay through the app or on the website. We accept all major credit cards. Our payment system is secure and encrypted."
-  utter_tipping:
-    - text: "Sure, you can. After the completion of the job, we will notify you on the app for tips and reviews. Alternatively, you can tip your movers in cash if you may want. 100% of the tip goes to the movers."
+  - text: "Goodbye! Have a great day!"
+  - text: "See you later! Take care!"
+  - text: "Goodbye! Feel free to reach out if you need help."
+  utter_about_tingsapp:
+  - text: "Tingsapp is a moving platform where you can easily schedule movers for your whole apartment or just a few household items with an upfront price. It's as convenient as booking a ride—quick and affordable."
+  - text: "Tingsapp is an easy-to-use platform that connects you with reliable movers in your area. We offer upfront pricing, so you know exactly what your move will cost, and our system ensures that you get the right help for your needs."
+  - text: "At Tingsapp, we provide moving services that make your life easier. Whether you’re moving an entire house or just a few items, we connect you with reliable, vetted movers, offering transparency and affordability."
+  utter_tingsapp_story:
+  - text: "Tingsapp was founded by a group of local movers with over a decade of experience, who wanted to create a more transparent and affordable moving service.Our goal is to make moving easier, more honest, and straightforward for everyone."
+  - text: "Tingsapp was founded by a team of experienced local movers with over a decade of expertise. Their mission was to create a moving service that is transparent, affordable, and accessible to all. Our goal is to simplify the moving process, making it honest, straightforward, and hassle-free for everyone."
+  - text: "Tingsapp was established by a team of local movers with over a decade of experience, driven by the vision of creating a moving service that is transparent, affordable, and reliable. Our mission is to make moving simpler, more honest, and stress-free for everyone."
+  utter_tingsapp_history:
+  - text: "Tingsapp was founded with the goal of simplifying the moving process. It was established in 2023 by a team of experienced movers who wanted to make moving more affordable and transparent for everyone."
+  - text: "Tingsapp was founded in 2023 out of the need for a better, more reliable moving experience. With over a decade of combined experience, the team saw an opportunity to improve the moving process, cutting out unnecessary fees and creating a user-friendly platform for customers."
+  - text: "Tingsapp has been operating since 2023 and has already made a significant impact in the moving industry, providing customers with an affordable, easy-to-use service."
   utter_tingsapp_mission:
-    - text: "We aim to provide a comprehensive and user-friendly platform for booking and coordinating moving services, backed by latest technology and around the clock quality customer service and support. Our goal is to become the go-to destination for individuals and businesses seeking reliable and cost-effective moving solutions. Through our commitment to customer satisfaction and innovation, we strive to set the standard for excellence in the moving industry."
+  - text: "Our mission is to make moving affordable and accessible to everyone."
+  - text: "Tingsapp strives to revolutionize the moving industry by offering an intuitive platform that connects customers with professional movers, ensuring affordable and transparent services without the hassles of traditional moving companies."
+  utter_tingsapp_vision:
+  - text: "Our vision is to be the leading moving platform that empowers customers by offering affordable, transparent, and reliable moving services through a user-friendly app. We aim to expand our reach and make moving easy for everyone, everywhere."
+  - text: "In the future, we envision Tingsapp becoming the go-to solution for anyone in need of moving services, with a vast network of trusted movers and expanded operations to cities and regions across the globe."
+  utter_tingsapp_features:
+  - text: "Tingsapp offers features like instant booking, upfront pricing, reliable and vetted movers, 24/7 support, and real-time move tracking."
+  - text: "Tingsapp provides instant booking, transparent pricing, a network of trusted movers, around-the-clock support, and live tracking of your move."
+  - text: "With Tingsapp, you get quick bookings, clear upfront pricing, reliable movers, 24/7 customer support, and the ability to track your move in real-time."
+  utter_tingsapp_team:
+  - text: "Tingsapp was founded by a team of experienced movers with a combined decade of experience in the moving industry. Our team is dedicated to improving the moving experience for both customers and movers."
+  - text: "Tingsapp is powered by a passionate team of movers, tech experts, and customer support professionals who work together to make your moving experience as seamless as possible."
+  - text: "Our team consists of dedicated professionals with years of experience."
+  utter_tingsapp_values:
+  - text: "Tingsapp values transparency, affordability, and reliability. We strive to ensure that customers always know what to expect, and that they can count on us for safe and secure moving services."
+  - text: "At Tingsapp, we prioritize customer satisfaction, affordability, and trust. Our goal is to make moving a stress-free experience, while maintaining the highest standards of service."
+  - text: "We follow principles of transparency, customer-first service, and continuous improvement. We believe in providing honest pricing and fostering trust between our customers and movers."
+  
+  utter_tingsapp_location:
+    - text: "Tingsapp is based in Vancouver, British Columbia, and operates in the surrounding Lower Mainland area. We’re constantly expanding to serve more cities across the region."
+    - text: "Tingsapp is headquartered in Vancouver, British Columbia."
 
+  utter_tingsapp_impact:
+    - text: "Tingsapp is making a significant impact by providing affordable moving services to individuals and businesses alike. We simplify the moving process and help local movers connect with customers, creating a more efficient and equitable industry."
+    - text: "Tingsapp makes a difference by offering transparent pricing, reducing hidden fees, and improving access to professional movers. We also empower local movers with more control over their work and earnings."
+    - text: "Tingsapp is dedicated to supporting local communities by providing affordable and reliable moving services. Our platform helps movers earn a living while offering customers a seamless and stress-free moving experience."
+
+  utter_tingsapp_affiliates:
+    - text: "Yes, Tingsapp works with a network of trusted affiliates to expand our services and bring you the best moving options available."
+    - text: "Tingsapp partners with local moving companies, service providers, and affiliates to bring reliable and cost-effective moving services to customers."
+    - text: "Tingsapp collaborates with vetted affiliates who share our values of transparency, affordability, and reliability, ensuring that all moves are handled by experienced professionals."
+
+  utter_tingsapp_philosophy:
+    - text: "The philosophy behind Tingsapp is to simplify moving by cutting out the complexities, hidden fees, and poor customer service that often make moving a stressful experience. We believe in offering a straightforward, transparent, and affordable solution."
+    - text: "Tingsapp is driven by a desire to make moving easy, transparent, and affordable. We aim to bring both customers and movers together for a more efficient and less stressful experience."
+    - text: "Tingsapp’s approach is centered around customer satisfaction, transparency, and making moving services accessible to everyone. We believe in making moving as straightforward as booking a ride."
+
+  utter_why_tingsapp:
+    - text: "You should choose Tingsapp because we offer upfront pricing, reliable movers, and the convenience of booking your move with just a few taps. We make moving easy, affordable, and transparent."
+    - text: "Tingsapp stands out because we provide clear pricing, no hidden fees, and flexible booking options. Our movers are background-checked and highly rated, ensuring a reliable moving experience."
+    - text: "Tingsapp is better because we offer fixed, upfront pricing, no last-minute charges, and a convenient platform that allows you to book and track your move easily. Plus, we focus on affordability and customer satisfaction."
+
+  utter_tingsapp_customer_feedback:
+    - text: "Customers love Tingsapp for its convenience, affordability, and reliability. They appreciate the upfront pricing and the ease of booking, as well as the professionalism of our movers."
+    - text: "People feel positive about Tingsapp because we take the stress out of moving. They appreciate the transparency, the friendly movers, and the fast, easy booking process."
+    - text: "Yes, you can find customer reviews on our website and Google profile."
+
+  utter_tingsapp_name:
+    - text: "The name 'Tingsapp' comes from Jamaican slang, where 'ting' is used to refer to almost everything. Since we focus on moving a wide variety of household items, it felt fitting to name the platform Tingsapp. Looking to the future, we envision Tingsapp expanding beyond just moving services to include other household-related needs."
+    - text: "The name 'Tingsapp' originates from Jamaican slang, where 'ting' can mean anything. It reflects our mission to handle a wide variety of household needs, starting with moving services."
+    - text: "Inspired by Jamaican slang, 'Tingsapp' represents versatility and simplicity. It's about moving 'tings' efficiently and envisioning a future where all household services can be managed in one app."
+  utter_tingsapp_terms:
+    - text: "You can find our terms of service on our website, located at the bottom of every page under Terms. tingsapp.com/terms"
+    - text: "You can access our terms of service on our website. They are linked at the bottom of every page under 'Terms.' tingsapp.com/terms"
+    - text: "To read Tingsapp's terms and conditions, visit the 'Terms' link at the bottom of any page on our website. tingsapp.com/terms"
+
+  utter_tingsapp_privacy:
+    - text: "Our privacy policy explains how we handle and protect your personal data when you use our platform. You can find it on our website."
+    - text: "Tingsapp uses industry-standard encryption to safeguard your data. We are committed to protecting your personal information and ensuring that it is used only for the purpose of providing you with our services."
+
+  utter_booking_process:
+    - text: "To book a move on Tingsapp, simply open the app or website, provide the details of your move, including pickup and delivery addresses, date, and time. After confirming the details, a mover will be assigned to your job."
+    - text: "Scheduling a move is easy with Tingsapp. Just enter your moving details, including pickup and delivery addresses, date, and time. Once you confirm your booking, a mover will be assigned."
+    - text: "Requesting a mover on Tingsapp is simple: just provide the necessary information about your move, and a mover will be assigned to help."
+
+  utter_mover_availability:
+    - text: "Tingsapp allows you to book a move at any time, but movers are available to assist during business hours, from Monday to Sunday."
+    - text: "You can book a move anytime on Tingsapp. Movers are available during regular business hours."
+    - text: "Tingsapp is available 24/7 for making bookings, but movers are available during regular business hours."
+
+  utter_order_tracking:
+    - text: "Once your move is confirmed, you can track it in real-time through the Tingsapp."
+    - text: "After your move is booked, you can track the status in the Tingsapp."
+    - text: "You can monitor the progress of your move in the Tingsapp."
+
+  utter_out_of_scope:
+  - text: "Sorry! the question is out of my scope"
+  - text: "I'm sorry, I can't answer this question"
+  - text: "The question is unrelated"
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  - text: Sorry, I couldn't get that. Can you try asking in a different way?
+  utter_default:
+  - text: Sorry I didn't get that. Can you rephrase?
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 
 actions:
 - utter_greet
-- utter_ask_weather
-- utter_ask_tingsapp
-- utter_ask_service_area
-- utter_tingsapp
-- utter_how_it_works
-- utter_cost
-- utter_operate_city
-- utter_long_distance
-- utter_account_required
-- utter_booking_time
-- utter_price_before_booking
-- utter_specific_items
-- utter_unmoved_items
-- utter_movers
-- utter_specific_mover
-- utter_packing_help
-- utter_install_appliances
-- utter_disassemble_assemble
-- utter_equipment
-- utter_contact_movers
-- utter_insurance_certificate
-- utter_damaged_items
-- utter_change_order
-- utter_cancel_move
-- utter_operation_hours
-- utter_payment_time
-- utter_cash_payment
-- utter_tipping
-# - action_tell_time
+- utter_goodbye
+- utter_about_tingsapp
+- utter_tingsapp_story
+- utter_tingsapp_history
 - utter_tingsapp_mission
+- utter_tingsapp_vision
+- utter_please_rephrase
+- utter_tingsapp_features
+- utter_tingsapp_team
+- utter_tingsapp_values
+- utter_tingsapp_location
+- utter_tingsapp_impact
+- utter_tingsapp_affiliates
+- utter_tingsapp_philosophy
+- utter_why_tingsapp
+- utter_tingsapp_customer_feedback
+- utter_tingsapp_name
+- utter_tingsapp_terms
+- utter_tingsapp_privacy
+- utter_booking_process
+- utter_mover_availability
+- utter_order_tracking
+
 
