@@ -11,6 +11,16 @@ stories:
   - intent: goodbye
   - action: utter_goodbye
 
+- story: User says thank you
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+
+- story: User say who are you
+  steps:
+  - intent: who_are_you
+  - action: utter_who_are_you
+
 - story: User ask about tingsapp
   steps:
   - intent: about_tingsapp
@@ -60,10 +70,10 @@ stories:
     - intent: tingsapp_impact
     - action: utter_tingsapp_impact
 
-- story: Tingsapp affiliates inquiry
-  steps:
-    - intent: tingsapp_affiliates
-    - action: utter_tingsapp_affiliates
+- story: Tingsapp partners inquiry
+  steps: 
+    - intent: tingsapp_partners
+    - action: utter_tingsapp_partners
 
 - story: Tingsapp philosophy inquiry
   steps:
@@ -75,37 +85,276 @@ stories:
     - intent: why_tingsapp
     - action: utter_why_tingsapp
 
-- story: Customer feedback inquiry
+- story: Feedback inquiry
   steps:
-    - intent: tingsapp_customer_feedback
-    - action: utter_tingsapp_customer_feedback
+    - intent: tingsapp_feedback
+    - action: utter_tingsapp_feedback
 
 - story: Tingsapp name inquiry
   steps:
     - intent: tingsapp_name
     - action: utter_tingsapp_name
 
-- story: Terms of service inquiry
-  steps:
-    - intent: tingsapp_terms
-    - action: utter_tingsapp_terms
-
-- story: Privacy policy inquiry
-  steps:
-    - intent: tingsapp_privacy
-    - action: utter_tingsapp_privacy
-
-- story: Booking process inquiry
-  steps:
+- story: Tingsapp testimonials inquiry
+  steps: 
+    - intent: tingsapp_testimonials
+    - action: utter_tingsapp_testimonials
+- story: Order process inquiry
+  steps: 
     - intent: booking_process
     - action: utter_booking_process
-
-- story: Mover availability inquiry
-  steps:
-    - intent: mover_availability
-    - action: utter_mover_availability
 
 - story: Order tracking inquiry
   steps:
     - intent: order_tracking
     - action: utter_order_tracking
+
+- story: Move notification inquiry
+  steps: 
+    - intent: move_notifications
+    - action: utter_move_notifications
+
+- story: How it work inquiry
+  steps: 
+    - intent: how_it_works
+    - action: utter_how_it_works
+
+- story: Order changes inquiry
+  steps: 
+    - intent: change_order
+    - action: utter_change_order
+
+- story: Booking details inquiry
+  steps: 
+    - intent: booking_details
+    - action: utter_booking_details
+
+- story: Multiple move inquiry
+  steps: 
+    - intent: multiple_moves
+    - action: utter_multiple_moves
+
+- story: Price details inquiry
+  steps: 
+    - intent: price_details
+    - action: utter_price_details
+
+- story: Uprfont price inquiry
+  steps: 
+    - intent: upfront_pricing
+    - action: utter_upfront_pricing
+
+- story: Price estinate inquiry
+  steps: 
+    - intent: price_estimate
+    - action: utter_price_estimate
+
+- story: Service fee inquiry
+  steps: 
+    - intent: service_fee
+    - action: utter_service_fee
+
+- story: Service fee inquiry
+  steps: 
+    - intent: additional_fees
+    - action: utter_additional_fees
+
+- story: Payment methods inquiry
+  steps: 
+    - intent: payment_methods
+    - action: utter_payment_methods
+
+- story: Payment process inquiry
+  steps: 
+    - intent: payment_process
+    - action: utter_payment_process
+
+- story: Receipt inquiry
+  steps: 
+    - intent: receipt
+    - action: utter_receipt
+
+- story: Payment security inquiry
+  steps: 
+    - intent: payment_security
+    - action: utter_payment_security
+
+- story: Refund policy inquiry
+  steps: 
+    - intent: refund_policy
+    - action: utter_refund_policy
+
+- story: Commercial moving inquiry
+  steps: 
+    - intent: commercial_moving
+    - action: utter_commercial_moving
+
+- story: Special item moving inquiry
+  steps: 
+    - intent: special_item_moving
+    - action: utter_special_item_moving
+
+- story: Loading uploading services inquiry
+  steps: 
+    - intent: loading_unloading_services
+    - action: utter_loading_unloading_services
+
+- story: Availability inquiry
+  steps: 
+    - intent: availability
+    - action: utter_availability
+
+- story: Damage protection inquiry
+  steps: 
+    - intent: damage_protection
+    - action: utter_damage_protection
+
+- story: Damage claim inquiry
+  steps: 
+    - intent: damage_claim
+    - action: utter_damage_claim
+
+- story: Insurance cost inquiry
+  steps: 
+    - intent: insurance_cost
+    - action: utter_insurance_cost
+
+- story: Mover requirements inquiry
+  steps: 
+    - intent: mover_requirements
+    - action: utter_mover_requirements
+
+- story: Movers benifites inquiry
+  steps: 
+    - intent: movers_benefits
+    - action: utter_movers_benefits
+
+- story: Movers responsibilities inquiry
+  steps: 
+    - intent: movers_responsibilities
+    - action: utter_movers_responsibilities
+
+- story: Movers equipment inquiry
+  steps: 
+    - intent: movers_equipment
+    - action: utter_movers_equipment
+
+- story: Mover arrival inquiry
+  steps: 
+    - intent: mover_arrival
+    - action: utter_mover_arrival
+
+- story: Contact customer inquiry
+  steps: 
+    - intent: contact_customer
+    - action: utter_contact_customer
+
+- story: Contact mover inquiry
+  steps: 
+    - intent: contact_mover
+    - action: utter_contact_mover
+
+- story: Review and ratings inquiry
+  steps: 
+    - intent: review_and_ratings
+    - action: utter_review_and_ratings
+
+- story: Review accuracy inquiry
+  steps: 
+    - intent: review_accuracy
+    - action: utter_review_accuracy
+
+- story: Negative review handling inquiry
+  steps: 
+    - intent: negative_review_handling
+    - action: utter_negative_review_handling
+
+- story: Positive review handling inquiry
+  steps: 
+    - intent: positive_review_handling
+    - action: utter_positive_review_handling
+
+- story: Mover support inquiry
+  steps: 
+    - intent: movers_support
+    - action: utter_movers_support
+
+- story: Partiner termination inquiry
+  steps: 
+    - intent: partner_termination
+    - action: utter_partner_termination
+
+- story: Account login inquiry
+  steps: 
+    - intent: account_login
+    - action: utter_account_login
+
+- story: Password reset inquiry
+  steps: 
+    - intent: password_reset
+    - action: utter_password_reset
+
+- story: Account update inquiry
+  steps: 
+    - intent: account_update
+    - action: utter_account_update
+
+- story: Account verification inquiry
+  steps: 
+    - intent: account_verification
+    - action: utter_account_verification
+
+- story: Pausing account inquiry
+  steps: 
+    - intent: pausing_account
+    - action: utter_pausing_account
+
+- story: General inquiries
+  steps: 
+    - intent: general_inquiries
+    - action: utter_general_inquiries
+
+- story: Issue resolution inquiry
+  steps: 
+    - intent: issue_resolution
+    - action: utter_issue_resolution
+
+- story: Website inquiry
+  steps: 
+    - intent: website
+    - action: utter_website
+
+- story: App issue inquiry
+  steps: 
+    - intent: app_issues
+    - action: utter_app_issues
+
+- story: Error message inquiry
+  steps: 
+    - intent: error_messages
+    - action: utter_error_messages
+
+- story: Reporting bugs inquiry
+  steps: 
+    - intent: reporting_bugs
+    - action: utter_reporting_bugs
+
+- story: Terms inquiry
+  steps: 
+    - intent: terms
+    - action: utter_terms
+
+- story: Privacy inquiry
+  steps: 
+    - intent: privacy
+    - action: utter_privacy
+
+- story: Legal inquiry
+  steps: 
+    - intent: legal_issues
+    - action: utter_legal_issues
+
+- story: Out of scope inquiries
+  steps: 
+    - intent: out_of_scope
+    - action: utter_out_of_scope

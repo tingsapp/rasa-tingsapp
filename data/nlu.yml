@@ -36,128 +36,1363 @@ nlu:
     - peace out
     - later
     - farewell
+- intent: thank_you
+  examples: |
+    - Ok
+    - Okay
+    - Alright
+    - Sure
+    - So
+    - Anyway
+    - Well, alright
+    - Alright then
+    - Fine
+    - Got it
+    - I see
+    - Understood
+    - Cool
+    - Sounds good
+    - Yeah, ok
+    - Ok then
+    - Okay, moving on
+    - Alright, what's next?
+    - Ok, I got it
+    - Ok, continue
+    - thank you
+    - thanks
+    - thanks a lot
+    - thanks so much
+    - many thanks
+    - appreciate it
+    - much appreciated
+    - thanks a ton
+    - thank you very much
+    - cheers
+    - grateful
+    - I'm thankful
+
+- intent: who_are_you
+  examples: |
+    - Who are you?
+    - What are you?
+    - Can you tell me who you are?
+    - Who am I talking to?
+    - Are you a human?
+    - What is your role here?
+    - Are you an AI?
+    - Tell me about yourself
+    - What can you do?
+    - What is your purpose?
 
 - intent: about_tingsapp
   examples: |
     - What is Tingsapp?
     - Tell me about Tingsapp.
     - What do you do at Tingsapp?
+    - Can you explain what Tingsapp is?
+    - How would you describe Tingsapp?
+    - What’s the purpose of Tingsapp?
+    - What does Tingsapp stand for?
+    - What is the idea behind Tingsapp?
+
 - intent: tingsapp_story
   examples: |
     - What’s the story behind Tingsapp?
     - What is tingsapp story?
     - Tingsapp story
+    - Who started Tingsapp?
+    - What inspired the creation of Tingsapp?
+    - Why was Tingsapp created?
+    - How did Tingsapp start?
+    - How did the idea of Tingsapp come about?
+    - What’s the reason behind Tingsapp’s creation?
+
 - intent: tingsapp_history
   examples: |
     - When was Tingsapp founded?
     - What’s the history of Tingsapp?
     - How long has Tingsapp been around?
+    - What’s the history behind Tingsapp?
+    - What led to the founding of Tingsapp?
+    - What year was Tingsapp established?
+    - What was the first year Tingsapp started offering services?
+    - What was Tingsapp’s first year in business?
+
 - intent: tingsapp_mission
   examples: |
     - What is Tingsapp's mission?
     - What is the goal of Tingsapp?
+    - What is the mission of Tingsapp?
+    - What are the core values of Tingsapp?
+    - How does Tingsapp aim to improve the moving experience?
+
 - intent: tingsapp_vision
   examples: |
     - What’s Tingsapp’s vision?
     - What do you envision for Tingsapp in the future?
+    - What is the long-term goal of Tingsapp?
+    - What’s Tingsapp’s ultimate aim?
+    - How does Tingsapp plan to expand in the future?
+
 - intent: tingsapp_features
   examples: |
     - What features does Tingsapp offer to make my move easier?
-    - How does Tingsapp help make my move easier?
-    - What can Tingsapp do to simplify my moving process?
-    - Tell me about tingsapp features.
+    - What can I expect from Tingsapp when booking a move?
+    - What makes Tingsapp different from other moving platforms?
+    - What features does Tingsapp offer for a smooth moving experience?
+    - Can I book a move instantly using Tingsapp?
+    - What are the tools available on Tingsapp to manage my move?
+
 - intent: tingsapp_team
   examples: |
     - Who is behind Tingsapp?
     - Who are the people behind Tingsapp?
     - Tell me about the team at Tingsapp.
+    - Who started Tingsapp?
+    - What kind of team is behind Tingsapp?
+    - Can you tell me about the people who created Tingsapp?
+    - Who works at Tingsapp?
+    - Who are the experts behind Tingsapp’s moving platform?
+    - Who’s responsible for making Tingsapp so easy to use?
+    - What kind of experience does the Tingsapp team have?
+    - Who’s behind the technology at Tingsapp?
+
 - intent: tingsapp_values
   examples: |
     - What values does Tingsapp hold?
     - What is important to Tingsapp?
     - What principles does Tingsapp follow?
+    - What does Tingsapp stand for?
+    - What makes Tingsapp different from other moving platforms?
+    - What are the core beliefs of Tingsapp?
+    - What are the main priorities for Tingsapp?
+    - What does Tingsapp believe in?
+    - What kind of values drive Tingsapp’s operations?
+    - How does Tingsapp ensure quality service?
+    - What does Tingsapp focus on to keep customers happy?
+    - What are the key principles behind Tingsapp’s business model?
+
 - intent: tingsapp_location
   examples: |
     - Where is Tingsapp located?
     - Where are you based?
+    - Where is Tingsapp headquartered?
+    - Where is the Tingsapp office located?
+    - What city is Tingsapp based in?
+    - Where are Tingsapp's main offices located?
+    - Can you tell me the location of Tingsapp's headquarters?
+    - In which city is Tingsapp’s corporate office?
+    - Where is Tingsapp’s company located?
+    - What is the location of Tingsapp's main office?
+    - Where did Tingsapp start?
+    - Where is Tingsapp's business based?
 
 - intent: tingsapp_impact
   examples: |
     - What kind of impact does Tingsapp have?
     - How does Tingsapp make a difference?
     - How does Tingsapp impact the community?
+    - How has Tingsapp affected the moving industry?
+    - What positive changes has Tingsapp brought to the moving industry?
+    - How is Tingsapp helping local communities?
+    - In what ways is Tingsapp making a difference in people’s lives?
+    - How does Tingsapp contribute to making moving easier for customers?
+    - What kind of difference is Tingsapp making for local movers?
+    - How does Tingsapp support its movers?
+    - What role does Tingsapp play in improving moving services?
+    - What impact has Tingsapp had on the affordability of moving services?
+    - What is Tingsapp’s role in changing the way people move?
 
-- intent: tingsapp_affiliates
+- intent: tingsapp_partners
   examples: |
-    - Do you have any affiliates?
+    - Do you have any partners?
     - Who are Tingsapp’s partners?
-    - Tell me about Tingsapp affiliates.
+    - Tell me about Tingsapp partners.
+    - Who does Tingsapp work with to provide services?
+    - Are there any companies Tingsapp collaborates with?
+    - Who are the partners Tingsapp collaborates with?
+    - Does Tingsapp have business partners or collaborators?
+    - How does Tingsapp ensure the quality of its partners?
+    - What kind of movers does Tingsapp work with?
+    - How does Tingsapp choose its service providers?
+    - Who are the service providers working with Tingsapp?
+    - How does Tingsapp ensure its affiliates maintain quality?
+    - Are the partners working with Tingsapp reliable?
 
 - intent: tingsapp_philosophy
   examples: |
     - What is the philosophy behind Tingsapp?
     - What drives Tingsapp?
     - What’s Tingsapp’s approach to business?
+    - What is the core belief of Tingsapp?
+    - What guides Tingsapp’s business model?
+    - What principles does Tingsapp follow in its operations?
+    - How does Tingsapp approach the moving industry?
+    - What makes Tingsapp different from other moving companies?
+    - What values drive Tingsapp’s business decisions?
+    - How does Tingsapp make moving easier for customers?
+    - Why is Tingsapp focused on affordability and transparency?
+    - How does Tingsapp ensure a smooth moving experience for customers?
 
 - intent: why_tingsapp
   examples: |
     - Why should I choose Tingsapp?
     - What makes Tingsapp different?
     - Why is Tingsapp better than other services?
+    - Why should I trust Tingsapp for my move?
+    - What makes Tingsapp the best choice for moving services?
+    - Why is Tingsapp better than traditional moving companies?
+    - What sets Tingsapp apart from other moving platforms?
+    - Why is Tingsapp considered more reliable than other options?
+    - Why should I use Tingsapp instead of booking movers directly?
+    - What’s the advantage of choosing Tingsapp over other moving apps?
+    - Why do people choose Tingsapp for their moving needs?
+    - Why is Tingsapp a great option for last-minute moves?
+    - What are the benefits of using Tingsapp for moving services?
 
-- intent: tingsapp_customer_feedback
+- intent: tingsapp_feedback
   examples: |
-    - What do customers say about Tingsapp?
-    - How do people feel about Tingsapp?
-    - Can I see reviews of Tingsapp?
+    - How can I provide feedback for Tingsapp?
+    - Where can I leave my review about Tingsapp?
+    - Can I suggest improvements for Tingsapp?
+    - How do I share my opinion about Tingsapp’s service?
+    - Is there a way to send feedback on Tingsapp’s service?
+    - Where can I send my comments regarding Tingsapp?
+    - How can I tell Tingsapp what I think about their service?
+    - Can I leave a suggestion for Tingsapp to improve?
+    - How do I leave a review for my mover through Tingsapp?
+    - Where do I submit feedback after completing a move?
 
 - intent: tingsapp_name
   examples: |
     - What’s the story behind the name?
     - How did the name Tingsapp come about?
     - What inspired the name Tingsapp?
+    - Why is it called Tingsapp?
+    - What does the name Tingsapp mean?
+    - How did you come up with the name Tingsapp?
+    - Where does the name Tingsapp come from?
+    - What’s the significance of the name Tingsapp?
 
-- intent: tingsapp_terms
+- intent: tingsapp_testimonials
   examples: |
-    - Where can I find the terms of service?
-    - How can I access Tingsapp’s terms of service?
-    - Where do I read Tingsapp's terms and conditions?
-
-- intent: tingsapp_privacy
-  examples: |
-    - What is your privacy policy?
-    - How does Tingsapp protect my data?
-
-- intent: tingsapp_affiliates
-  examples: |
-    - Do you have any affiliates?
-    - Who are Tingsapp’s partners?
-    - Tell me about Tingsapp affiliates.
+    - What do customers say about Tingsapp?
+    - How do people feel about Tingsapp?
+    - Can I see reviews of Tingsapp?
+    - What’s the feedback on Tingsapp?
+    - What do users think about Tingsapp?
+    - Are there any reviews for Tingsapp?
+    - What are people saying about their experience with Tingsapp?
+    - What do customers think of Tingsapp’s service?
+    - How satisfied are users with Tingsapp?
+    - What’s the general opinion on Tingsapp?
+    - Can I read customer experiences with Tingsapp?
+    - What’s the feedback from people who’ve used Tingsapp?
 
 - intent: booking_process
   examples: |
     - How do I book a move?
     - What’s the process to schedule a move?
     - How can I request a mover on Tingsapp?
-
-- intent: mover_availability
-  examples: |
-    - Are movers available 24/7?
-    - When can I book a move with Tingsapp?
-    - What are the working hours of Tingsapp?
+    - How can I book a move with Tingsapp?
+    - What do I need to do to schedule my move on Tingsapp?
+    - Can I book a move on Tingsapp website?
+    - How do I choose a time for my move on Tingsapp?
+    - What information do I need to provide to book a move?
+    - How can I confirm my move booking on Tingsapp?
+    - What are the steps to schedule a move with Tingsapp?
+    - Can I change my move details after booking on Tingsapp?
+    - How does the booking process work on Tingsapp?
+    - How long does it take to book a mover on Tingsapp?
 
 - intent: order_tracking
   examples: |
     - How do I track my move?
     - Can I check the status of my move?
     - Where can I see the progress of my move?
+    - How can I see where my mover is during the move?
+    - Is there a way to track my mover’s location in real-time?
+    - How do I know when my mover will arrive?
+    - Can I receive updates on the progress of my move?
+    - Can I get notifications about my move's status?
+    - Is there a way to see how far my mover is from my location?
+    - How do I track my mover’s route in Tingsapp?
+
+- intent: move_notifications
+  examples: |
+    - Will I get notifications throughout my move?
+    - How will I be notified about my move’s progress?
+    - Do I receive updates during my move?
+    - Will I be notified when my move starts and ends?
+    - Will I receive updates when my mover is on the way?
+    - How do I know when my move is completed?
+    - Can I expect notifications throughout the entire move?
+    - Will I get a notification when the mover is heading to my location?
+    - How will I know when the movers arrive?
+    - Will I be updated on the status of my move?
+    - Do I get notified when the movers finish their job?
+    - Will I receive alerts about my move during the day?
+    - How do I stay informed about the progress of my move?
+    - How do I know when my move is done?
+    - Will I get notifications on the progress of my job?
+    - Do I get an alert when the move is completed successfully?
+
+- intent: how_it_works
+  examples: |
+    - How does Tingsapp work?
+    - Can you explain how Tingsapp operates?
+    - What’s the process after I book a move?
+    - How does Tingsapp process work?
+    - How do I book a move on Tingsapp?
+    - Can you walk me through how Tingsapp works?
+    - How do I use Tingsapp to schedule a move?
+    - What’s the procedure for booking a move with Tingsapp?
+    - How do I track my move after booking it on Tingsapp?
+    - How does booking a move through Tingsapp work?
+    - What’s involved in using Tingsapp to move my things?
+    - How can I book a mover through Tingsapp?
+    - What happens once I enter my details on Tingsapp?
+    - Can you explain the process of booking a move using Tingsapp?
+    - How do I book a professional mover on Tingsapp?
+    - How does Tingsapp assign movers to my job?
+    - What should I expect after providing my moving information on Tingsapp?
+    - How does Tingsapp assign a mover to my move?
+    - How does Tingsapp track my move in real time?
+    - What’s the process after I confirm my move details on Tingsapp?
+    - How do I know when my mover is on their way with Tingsapp?
+    - How can I track the progress of my move on Tingsapp?
+    - How do I get updates about my move on Tingsapp?
+
+- intent: change_order
+  examples: |
+    - Can I make changes to my order after booking?
+    - How do I modify my move after confirming it?
+    - Can I update my move details once I’ve confirmed it?
+    - How can I change my booking after confirming it?
+    - Can I modify my order after I’ve confirmed it?
+    - How do I update my booking details after confirmation?
+    - Can I change the details of my move after it's booked?
+    - How do I edit my booking once it's confirmed?
+    - What should I do if I need to update my move details?
+    - Can I adjust the time or location of my move after booking?
+    - How do I update the time or date for my scheduled move?
+    - Is it possible to change the pickup or delivery time for my move?
+    - How do I update my move details on Tingsapp?
+
+- intent: order_cancellation
+  examples: |
+    - Can I cancel my move after booking?
+    - Is there a fee if I cancel my move?
+    - What happens if I cancel within 24 hours of my move?
+    - Are there penalties for canceling a booking?
+    - Can I get a refund if I cancel my move?
+    - Is the cancellation fee fixed or based on the booking cost?
+    - Will I be charged if I cancel on the day of the move?
+    - What are the terms for canceling a move?
+    - Can I cancel without any charges if done in advance?
+    - How do I cancel my booking with Tingsapp?
+
+- intent: booking_details
+  examples: |
+    - What do I need to fill out when booking a move?
+    - What details are required to schedule a move?
+    - What information do I have to provide when booking through Tingsapp?
+    - What details do I need to provide to book a move?
+    - What information do I need to enter when booking a move?
+    - What’s required when scheduling a move through Tingsapp?
+    - What do I need to fill out when making a booking for a move?
+    - How do I provide the details for my move when booking?
+    - What should I include when booking a move on Tingsapp?
+    - What information do I need to give when scheduling a move?
+    - How do I provide my move details for scheduling?
+    - What do I need to provide to confirm a move with Tingsapp?
+    - What is required to book a move through Tingsapp?
+
+- intent: multiple_moves
+  examples: |
+    - Can I book more than one move through Tingsapp?
+    - How do I schedule multiple moves for different dates?
+    - Is it possible to arrange multiple moves at once using Tingsapp?
+    - Can I book multiple moves at once on Tingsapp?
+    - How do I schedule more than one move at a time?
+    - Can I arrange multiple moves through Tingsapp?
+    - How do I book several moves for different dates?
+    - Is it possible to schedule multiple moves at once?
+    - Can I book different moves for different locations on Tingsapp?
+    - How do I manage multiple moves through Tingsapp?
+    - Can I arrange different moves for different days with Tingsapp?
+    - How do I schedule multiple moves on Tingsapp at once?
+    - Is it possible to book several moves for various dates and locations?
+
+- intent: price_details
+  examples: |
+    - Can you provide a breakdown of the pricing?
+    - What’s included in the price for my move?
+    - How much does it cost to use Tingsapp for moving?
+    - What is the pricing structure for my move?
+    - How is the price calculated for a move?
+    - Can you explain how the pricing works for my move?
+    - How is the cost of a move calculated on Tingsapp?
+    - Can you provide a breakdown of the charges for a move?
+    - What does the price for my move include?
+    - How is the price determined for my moving service?
+    - What factors influence the cost of a move on Tingsapp?
+    - What is included in the price when booking a move?
+    - How does Tingsapp calculate the cost of a move?
+    - What details affect the price of my moving service?
+    - Can I see a detailed breakdown of the charges before booking?
+    - How do I know the pricing structure for my move?
+    - What do I pay for when using Tingsapp’s moving service?
+    - Is the price I see at booking the final amount I’ll be charged?
+
+- intent: upfront_pricing
+  examples: |
+    - How does Tingsapp provide pricing upfront?
+    - Will I know the price before booking?
+    - How does Tingsapp calculate pricing before booking?
+    - Will I know the price for my move before confirming the booking?
+    - Does Tingsapp provide the exact price upfront?
+    - How do you determine the cost of a move?
+    - Can I see the price before deciding to book a move?
+    - Is the price for my move fixed before booking?
+    - What factors are considered for upfront pricing?
+    - Do you calculate the price based on my moving details before booking?
+    - Is there transparency in pricing at the time of booking?
+    - How does Tingsapp ensure no surprise charges?
+
+- intent: price_estimate
+  examples: |
+    - Can I get a price estimate before booking a move?
+    - How do I know how much my move will cost?
+    - Is there a way to check the cost of a move on Tingsapp?
+    - Can I get an estimate for my move before booking?
+    - How do I find out how much my move will cost?
+    - Can I know the price of my move in advance?
+    - How can I get a price estimate before booking a move?
+    - How does Tingsapp provide price estimates for moves?
+    - Can I check the cost of my move before confirming it?
+    - Is there a way to get an upfront price for my move?
+    - How do I get an estimate for my move on Tingsapp?
+    - What do I need to do to get a price estimate for my move?
+    - How can I check the price before booking my move on Tingsapp?
+
+- intent: service_fee
+  examples: |
+    - Does Tingsapp charge a service fee?
+    - Are there any additional service fees for using Tingsapp?
+    - What fees do you charge for using Tingsapp?
+    - Will I have to pay extra fees after booking a move with Tingsapp?
+    - Are there hidden fees when I book a move on Tingsapp?
+    - Do I need to pay any extra fees after completing my move with Tingsapp?
+    - Is there a service fee added to my Tingsapp booking?
+    - What is the total cost for a move with Tingsapp?
+    - Do you charge any additional fees apart from the move price?
+    - Are there any unexpected fees when I pay for a move on Tingsapp?
+
+- intent: additional_fees
+  examples: |
+    - Are there any additional fees?
+    - Are there any extra costs after booking?
+    - Are there any extra charges after I book a move?
+    - Does Tingsapp have hidden fees?
+    - Will there be any additional costs added after my booking?
+    - Is the upfront price all-inclusive?
+    - Can I trust that there are no hidden charges?
+    - Are there any fees I should know about after the move is completed?
+    - Do I pay anything beyond the quoted price?
+    - Does Tingsapp charge extra for unforeseen circumstances?
+    - Is the final price exactly what I was shown upfront?
+    - What is included in the upfront price?
+
+- intent: payment_methods
+  examples: |
+    - What payment methods do you accept?
+    - Can I pay using my mobile wallet?
+    - What payment options are available with Tingsapp?
+    - Can I use my credit card for payment?
+    - Does Tingsapp accept mobile wallet payments?
+    - Can I pay using Apple Pay or Google Pay?
+    - What are the accepted forms of payment?
+    - Is cash payment allowed?
+    - Do you accept payments through online methods?
+    - Can I pay for my move with my phone?
+    - What are the digital payment options supported?
+    - Are all major credit cards accepted?
+
+- intent: payment_process
+  examples: |
+    - When will I be charged for my move?
+    - How does the payment process work?
+    - How does Tingsapp handle payment after the move?
+    - When will my payment be processed?
+    - Do I pay before or after the move is completed?
+    - What happens with payment after my move is finished?
+    - How will I be charged for my move?
+    - Will I receive confirmation of the payment?
+    - Is the payment process automated?
+    - Do I need to manually confirm payment after the move?
+    - How do I know my payment has gone through?
+    - Where can I find proof of payment for my move?
+
+- intent: receipt
+  examples: |
+    - How can I get a copy of my invoice?
+    - Where can I find my invoice for the move?
+    - How can I access my invoice after the move?
+    - Will I receive an invoice for my completed move?
+    - Where can I find the receipt for my payment?
+    - Is a copy of the invoice sent to my email?
+    - Can I view my receipt in my Tingsapp account?
+    - How do I download an invoice for my move?
+    - Will the receipt include all payment details?
+    - Is the invoice automatically provided?
+    - Where can I check my payment history?
+    - How do I confirm the details of my completed move?
+
+- intent: payment_security
+  examples: |
+    - How secure is my payment information?
+    - How do you protect my payment information?
+    - Is my payment information secure with Tingsapp?
+    - How does Tingsapp protect my credit card details?
+    - What security measures are in place for payments?
+    - Does Tingsapp store my payment information?
+    - Is it safe to use my card on Tingsapp?
+    - How secure is the payment gateway?
+    - Are transactions handled securely on Tingsapp?
+    - Does Tingsapp comply with payment security standards?
+    - Is my financial data encrypted during transactions?
+    - Can I trust Tingsapp with my payment information?
+
+- intent: refund_policy
+  examples: |
+    - Can I get a refund if I'm not satisfied with the service?
+    - How does the refund process work?
+    - What is Tingsapp’s refund policy?
+    - Can I get my money back if I’m not satisfied with the move?
+    - How does the refund process work?
+    - Are refunds possible if there’s an issue with the service?
+    - Will Tingsapp consider a refund if my expectations aren’t met?
+    - What situations qualify for a refund?
+    - How are refunds processed by Tingsapp?
+    - Can I request a partial refund for an unsatisfactory move?
+    - Is there a time frame for requesting refunds?
+    - Are refunds issued back to the original payment method?
+
+- intent: service_offered
+  examples: |
+    - What kind of moving services does Tingsapp provide?
+    - Can you tell me about the services offered by Tingsapp?
+    - What do you offer in terms of moving assistance?
+    - How can Tingsapp help with my move?
+    - What types of moves does Tingsapp handle?
+    - Does Tingsapp only offer moving services?
+    - What services are available for moving through Tingsapp?
+    - What do you mean by moving services from Tingsapp?
+    - Can you describe the moving services Tingsapp offers?
+    - What is included in Tingsapp’s moving services?
+
+- intent: residential_moving
+  examples: |
+    - Do you provide home moving services?
+    - Can Tingsapp help me move to a new house?
+    - Are residential moves part of your services?
+    - Does Tingsapp offer services for families relocating?
+    - Can you help me with moving furniture to my new home?
+    - Are home moving services included in Tingsapp’s offerings?
+    - How does Tingsapp manage residential moves?
+    - Is Tingsapp a good option for moving houses?
+    - Do you handle moves for apartments and homes?
+    - Can Tingsapp assist with moving heavy furniture?
+
+- intent: commercial_moving
+  examples: |
+    - Does Tingsapp handle office relocations?
+    - Can Tingsapp help me move my office?
+    - Do you provide services for office or business relocations?
+    - Can I use Tingsapp to relocate my business?
+    - Does Tingsapp offer corporate moving services?
+    - Can your movers assist with moving office equipment?
+    - Are office moving services part of Tingsapp’s offerings?
+    - Is Tingsapp suitable for relocating a business?
+    - Does Tingsapp assist with moving office furniture?
+    - Are commercial moves included in your services?
+
+- intent: special_item_moving
+  examples: |
+    - Can Tingsapp move heavy items like pianos or safes?
+    - Do you move specialty items like pool tables or jukeboxes?
+    - Will Tingsapp move fragile or valuable items?
+    - Do you provide special handling for delicate furniture or antiques?
+    - Can Tingsapp assist with moving oversized items like custom-made furniture?
+    - Are specialty item services available on Tingsapp?
+    - Does Tingsapp handle large, heavy objects like safes or kegs?
+    - Can you move fragile items such as glass furniture or mirrors?
+    - What are Tingsapp's restrictions on item size or weight?
+    - Does Tingsapp charge extra for handling specialty or oversized items?
+    - Are valuables like antiques or jewelry included in your services?
+    - How does Tingsapp manage delicate or fragile item moves?
+    - Can Tingsapp move a piano or similar heavy equipment?
+    - Do you transport unique items like vintage furniture or sculptures?
+    - Are there limitations on what Tingsapp can move?
+
+- intent: loading_unloading_services
+  examples: |
+    - Can Tingsapp help with loading and unloading?
+    - Do you provide labor-only moving services?
+    - Does Tingsapp assist with loading trucks or pods?
+    - Can you help me move items into my rental truck?
+    - Does Tingsapp provide manpower for loading tasks?
+    - Are loading services separate from your moving packages?
+    - Can I hire your movers just for unloading?
+    - How does Tingsapp assist with loading heavy furniture?
+    - Are labor-only services available?
+    - Does your service include packing or furniture assembly?
+    - Can you help me load my belongings into a truck?
+    - Does Tingsapp offer standalone loading services?
+    - Can I hire movers for loading only?
+    - Do you assist with unloading items from a rental truck?
+    - Will your team load my items into a pod?
+    - Can I book Tingsapp for loading and unloading only?
+    - Do you provide manpower for loading tasks?
+    - Are your movers available for unloading services alone?
+    - Do you handle the loading of heavy furniture?
+    - Does your service include packing and assembly?
+    - Can your movers help me pack before loading?
+    - Does Tingsapp load items into trucks not owned by your company?
+    - Do you offer unloading services without transportation?
+    - How do your movers handle heavy furniture during a move?
+    - Does your full-service package include unpacking at the destination?
+    - Can I hire Tingsapp just to unload my truck at the destination?
+    - Will Tingsapp movers assist with loading pods or shipping containers?
+    - Does Tingsapp include packing assistance as part of its services?
+    - Will your team disassemble furniture before moving?
+    - Are there additional charges for heavy furniture loading?
+
+- intent: unmoveable_items
+  examples: |
+    - What items does Tingsapp not move?
+    - Are there any items that Tingsapp won't transport?
+    - Can Tingsapp move my pet or piano?
+    - Are pool tables or gun safes included in Tingsapp's services?
+    - Does Tingsapp transport alcohol or jukeboxes?
+    - Can I move my gun safe or pet with Tingsapp?
+    - Is it possible to move a piano with Tingsapp?
+    - What are the restrictions on items for moving with Tingsapp?
+    - Do you move kegs or pool tables?
+    - Are there specific items Tingsapp won’t handle?
+    - Can Tingsapp assist with moving an organ or a jukebox?
+    - Does Tingsapp allow moving pets or fragile items like musical instruments?
+    - Are there limitations on the type of items Tingsapp can move?
+    - Can you help with transporting specialty items like safes or antiques?
+    - What are the prohibited items for moves with Tingsapp?
+
+- intent: storage_services
+  examples: |
+    - Does Tingsapp provide storage services?
+    - Can I store my items with Tingsapp?
+    - Are you planning to offer storage services in the future?
+    - Does Tingsapp have any plans for offering storage solutions?
+    - When will storage services be available?
+    - Are storage options going to be available soon?
+    - Can I expect Tingsapp to provide storage in the future?
+    - Will I be able to store my belongings with Tingsapp soon?
+    - Is Tingsapp working on adding storage services in the future?
+    - Will storage services be part of Tingsapp’s offerings eventually?
+    - Does Tingsapp have a storage facility?
+    - Can I store my furniture with Tingsapp?
+    - Do you offer temporary storage services?
+    - Are there any storage options available with Tingsapp?
+    - Does Tingsapp provide long-term storage solutions?
+    - Can Tingsapp hold my items temporarily?
+    - Are storage services included in Tingsapp’s packages?
+    - Is there a storage option available for my belongings?
+    - Does Tingsapp offer storage for residential moves?
+    - Can I book storage through Tingsapp?
+    - Are there any storage plans for customers?
+    - Does Tingsapp provide warehouse storage?
+    - Can I leave my items with Tingsapp while waiting to move?
+    - Are storage facilities part of your services?
+    - Do you store items overnight as part of your move?
+
+- intent: service_area
+  examples: |
+    - Where do you offer moving services?
+    - What areas do you cover for moving?
+    - Which locations can I get moving services in?
+    - Can you tell me the areas where you operate?
+    - Where is Tingsapp available for moving?
+    - Which cities do you serve for moving services?
+    - Where can I book Tingsapp for moving services?
+    - Is Tingsapp available in Metro Vancouver?
+    - Do you operate in the Lower Mainland?
+    - Can I book a move in Richmond with Tingsapp?
+    - Does Tingsapp provide services in Burnaby?
+    - Are you available in Surrey for moving services?
+    - Which areas in Metro Vancouver do you cover?
+    - Is Coquitlam included in Tingsapp’s service area?
+    - Can I get moving services in Langley?
+    - Do you cover New Westminster for moves?
+    - Is Delta part of your service area?
+    - Are North Vancouver and West Vancouver included in your coverage?
+    - Do you offer moving services in Maple Ridge?
+    - Is Port Coquitlam part of your service region?
+    - Can Tingsapp assist with moves in Pitt Meadows?
+    - What cities are part of Tingsapp’s service area?
+    - Are moving services available in Port Moody?
+    - Which regions do you currently serve?
+    - Does Tingsapp cover the entire Lower Mainland?
+    - Can I book Tingsapp in West Vancouver?
+
+- intent: availability
+  examples: |
+    - Are movers available 24/7?
+    - When can I book a move with Tingsapp?
+    - What are the working hours of Tingsapp?
+    - Can I book a mover for a late-night move?
+    - Are movers available on weekends?
+    - What hours can I expect movers to be available on Tingsapp?
+    - Can I schedule a move for the next day with Tingsapp?
+    - What’s the best time to book a mover on Tingsapp?
+    - Are movers available on holidays?
+    - How flexible are the movers' hours on Tingsapp?
+    - How far in advance do I need to book a mover on Tingsapp?
+    - Can I get a mover for an urgent move at any time?
+    - Can I book a mover for early morning hours?
+
+- intent: damage_protection
+  examples: |
+    - What kind of insurance do you offer for my move?
+    - Do you offer insurance for my belongings during the move?
+    - What types of insurance are available for my move?
+    - Is there any insurance coverage for my move?
+    - Can I insure my items during the move?
+    - Do you provide protection for my belongings while moving?
+    - What kind of coverage does Tingsapp provide for moving?
+    - Is insurance included in the price of my move?
+    - Do I need to purchase additional insurance for my belongings?
+    - How much basic coverage does Tingsapp provide?
+    - What does the insurance cover during my move?
+    - Does Tingsapp offer full-value protection for moves?
+    - Can I add extra coverage for my items while booking?
+    - What is the standard protection offered for my belongings?
+    - Is there an option to upgrade the insurance coverage?
+    - How much does the basic insurance cover per item?
+    - Do you offer any premium insurance packages for moves?
+    - Are my items insured during transportation?
+    - How can I get extra protection for my belongings?
+    - What is the legal coverage provided by Tingsapp?
+    - How do I ensure full protection for my valuables during the move?
+    - Does Tingsapp include insurance in the quoted price?
+    - Who should I contact for additional moving insurance?
+    - Can I rely on the basic coverage for expensive items?
+    - What is the rate of basic coverage per kilogram or pound?
+    - Does Tingsapp cover damages during the move?
+
+- intent: damage_claim
+  examples: |
+    - How do I file an insurance claim for damages?
+    - What steps should I take to report damage to my belongings?
+    - How do I report damage and claim insurance?
+    - What is the process for filing an insurance claim if something gets damaged?
+    - How do I file an insurance claim for damages?
+    - How do I report damage and claim insurance?
+    - What is the process for filing an insurance claim if something gets damaged?
+    - How do I claim insurance for damaged items?
+    - How can I make a claim for damages during the move?
+    - Can you explain how I can file a claim for damage to my belongings?
+    - How do I submit photos for a damage claim?
+    - What do I need to submit to file a claim for damaged items?
+    - How will I know if my damage claim has been received?
+    - How long does it take to process an insurance claim?
+    - How long will it take to process my insurance claim for damages?
+    - What’s the average time for insurance claims to be finalized?
+    - After I file a claim, how much time does it take to get the insurance payment?
+    - When can I expect a resolution after filing a damage claim?
+    - What’s the typical timeline for a damage claim to be reviewed?
+
+- intent: insurance_cost
+  examples: |
+    - Is insurance included in the moving cost?
+    - Does the price of the move include insurance?
+    - Is insurance part of the moving package?
+    - Is insurance automatically included in the cost of the move?
+    - Will I be charged extra for insurance during the move?
+    - Does the moving cost cover insurance for my belongings?
+    - How much does insurance cost for the move?
+    - What is the cost of insurance for my move?
+    - How much do I pay for insurance during my move?
+    - Is the cost of insurance additional or included?
+    - Can you tell me the price of insurance for moving my belongings?
+    - How much would I need to pay for insurance during my move?
+    - Does Tingsapp provide insurance as part of the moving cost?
+    - Is additional coverage available through Tingsapp?
+    - Are my items insured under the moving cost?
+
+- intent: mover_requirements
+  examples: |
+    - What are the qualifications to become a mover with Tingsapp?
+    - What experience do I need to sign up as a mover?
+    - Do I need to own a truck to qualify as a mover for Tingsapp?
+    - Is moving experience required to work with Tingsapp?
+    - What are the requirements for becoming a mover?
+    - Can anyone sign up as a mover for Tingsapp?
+    - Are background checks part of the qualification process for movers?
+    - What legal requirements must I meet to work as a mover?
+    - Do I need to be of legal working age to qualify as a mover?
+    - Is it mandatory to have a truck to become a mover?
+    - Does Tingsapp require movers to have a valid work permit?
+    - How does Tingsapp ensure its movers meet legal and safety requirements?
+    - What makes someone qualified to work as a mover for Tingsapp?
+    - Do I need to undergo a background check to work as a mover?
+    - Are there specific city regulations I need to follow to qualify as a mover?
+
+- intent: mover_signup
+  examples: |
+    - How do I sign up as a mover for Tingsapp?
+    - What is the process to become a mover with Tingsapp?
+    - Can movers sign up directly through an app?
+    - Where can I download the Mover app to sign up?
+    - What happens after I submit my application to become a mover?
+    - How long does it take for my application to be reviewed?
+    - Are movers independent contractors with Tingsapp?
+    - What documents or information do I need to provide when signing up?
+    - Can I apply to be a mover if I am self-employed?
+    - Will I receive notifications about my application status?
+    - Do I need to meet specific criteria to sign up as a mover?
+    - How does Tingsapp ensure movers meet the necessary qualifications?
+    - What happens if my application is not approved?
+    - Is there a fee to sign up as a mover for Tingsapp?
+
+- intent: movers_benefits
+  examples: |
+    - What benefits do I get by becoming a Tingsapp mover?
+    - How will becoming a Tingsapp mover help my business grow?
+    - Can I work with my own customers as a Tingsapp mover?
+    - How does Tingsapp help movers find additional jobs?
+    - Can I set my own prices as a Tingsapp mover?
+    - Do I have control over which job offers I accept or decline?
+    - What kind of support does Tingsapp provide to its movers?
+    - Are there marketing benefits for Tingsapp movers?
+    - How does Tingsapp help increase my business visibility?
+    - What tools does Tingsapp provide to help movers manage their work?
+    - Can I get co-marketing opportunities as a Tingsapp mover?
+    - Does Tingsapp offer any exclusive features for movers?
+    - How does Tingsapp help improve my reputation as a mover?
+    - Will Tingsapp help me stay busy with job offers?
+    - Does Tingsapp offer any training or resources for movers?
+
+- intent: movers_responsibilities
+  examples: |
+    - What is the main responsibility of a Tingsapp mover?
+    - How does customer rating impact a Tingsapp mover’s responsibility?
+    - Are Tingsapp movers responsible for their own vehicle and equipment?
+    - What happens if a Tingsapp mover causes damage during a move?
+    - What agreement do Tingsapp movers sign when joining the platform?
+    - What should Tingsapp movers do to ensure the safety of their equipment and vehicle?
+    - How can Tingsapp movers ensure they provide the best service to customers?
+    - Are Tingsapp movers held accountable for damages caused during a move?
+    - What is expected of Tingsapp movers in terms of professionalism and reliability?
+    - How does the contract with Tingsapp affect a mover’s responsibility?
+    - What must Tingsapp movers do to maintain good ratings?
+    - Are Tingsapp movers responsible for the safety of the items they move?
+    - Can Tingsapp movers be rated negatively by customers?
+
+- intent: movers_equipment
+  examples: |
+    - What equipment do Tingsapp movers bring?
+    - Do Tingsapp movers bring their own tools and equipment?
+    - What kind of equipment will Tingsapp movers use for my move?
+    - Can you tell me about the equipment that Tingsapp movers bring?
+    - Do Tingsapp movers come with all the necessary equipment?
+    - What kind of moving tools will Tingsapp movers use?
+    - Do Tingsapp movers use moving trucks?
+    - Will Tingsapp movers provide a truck for my move?
+    - Do Tingsapp movers come with a moving truck?
+    - Are trucks provided for my move?
+    - Does Tingsapp provide a truck for the move?
+    - Will a truck be available when Tingsapp movers arrive?
+    - What tools and equipment will Tingsapp movers bring to handle my move?
+    - How does Tingsapp ensure movers are fully equipped for a move?
+    - Will Tingsapp movers bring everything needed for the safe transport of my belongings?
+
+- intent: mover_arrival
+  examples: |
+    - How will I know when the mover is arriving?
+    - When will I be notified about the mover’s arrival?
+    - Can I track my mover's arrival?
+    - How do I know when the mover will arrive?
+    - When will I receive the arrival time of my mover?
+    - How do I get updates on my mover's arrival?
+    - How can I track my mover's arrival time?
+    - Will I be notified when my mover is close?
+    - How do I know when the mover is on their way?
+    - Can I get real-time updates on the mover's arrival?
+    - When will I be notified that the mover is on their way?
+    - How do I get notified when the mover is nearby?
+    - Can I track the mover’s location before they arrive?
+
+- intent: contact_customer
+  examples: |
+    - How do I contact the customer after accepting a job?
+    - Can I message the customer through the app?
+    - How do I reach the customer before starting the job?
+    - Is there a way to call the customer directly via Moverapp?
+    - How do I communicate with the customer to confirm details?
+    - Can I contact the customer to ask for additional instructions?
+    - How do I get in touch with the customer on the day of the move?
+    - What if I need to ask the customer something about the job?
+    - How can I send a message to the customer through Moverapp?
+    - Is there an option to call the customer through the app?
+    - Can I reach the customer for updates or clarifications?
+    - How do I confirm the location with the customer before the move?
+    - Is it possible to contact the customer if there are changes in timing?
+    - How do I clarify details with the customer before starting the job?
+    - Can I communicate with the customer during the moving process?
+
+- intent: contact_mover
+  examples: |
+    - How do I contact my movers?
+    - Can I talk to my movers before the move?
+    - How can I reach my movers during the move?
+    - How can I get in touch with my mover?
+    - Is there a way to message my mover before the move?
+    - How do I reach my mover if I need to talk to them?
+    - Can I contact the mover after booking the move?
+    - How do I communicate with the movers before the move starts?
+    - Can I speak to my mover about details before the move?
+    - How can I send a message to my assigned mover?
+    - Will I be able to chat with the mover on the day of the move?
+    - Can I contact my mover through the app during the moving process?
+    - What if I need to contact the mover while the move is happening?
+    - How do I contact my mover during the move if needed?
+    - Can I call or message the mover during the move?
+    - How do I send instructions or ask questions to the mover?
+    - Is it possible to update my mover about the move through the app?
+    - Can I message my mover to make changes during the move?
+    - How do I clarify any details with my mover before or during the move?
+    - Will I be able to directly reach my mover through the app?
+    - How do I talk to my assigned mover about the details of my move?
+    - Is there an option to communicate directly with my mover through Tingsapp?
+    - How can I chat with my mover if I have any last-minute instructions?
+    - What if I need to update the mover on the progress or location?
+    - Can I communicate with the mover throughout the whole moving process?
+
+- intent: review_and_ratings
+  examples: |
+    - How can I rate my Tingsapp movers?
+    - How do I give feedback for my Tingsapp movers?
+    - Can I leave a review for my Tingsapp movers?
+    - How can I submit a rating for the Tingsapp movers?
+    - How do I rate the Tingsapp movers' service?
+    - Is there a way to provide feedback for the Tingsapp movers?
+    - Can I leave a review for my moving experience with Tingsapp?
+    - How do I write a review for the Tingsapp moving service?
+    - Can I submit feedback for the Tingsapp move?
+    - Is there a place where I can leave a review for my Tingsapp movers?
+    - How do I share my experience with the Tingsapp movers?
+    - Can I provide feedback on the service I received from Tingsapp?
+    - How do I rate the service I received from my Tingsapp movers?
+    - Where can I submit a rating for my Tingsapp movers?
+    - How can I provide feedback after my move with Tingsapp?
+
+- intent: review_accuracy
+  examples: |
+    - How accurate is Tingsapp’s review system for movers?
+    - Can I trust the reviews I see about movers on Tingsapp?
+    - Are all reviews of movers on Tingsapp verified?
+    - Are there any fake reviews about movers on Tingsapp?
+    - Does Tingsapp ensure that reviews of movers are honest and reliable?
+    - How does Tingsapp ensure the accuracy of reviews for movers?
+    - Can I rely on the reviews of movers on Tingsapp?
+    - How does Tingsapp validate reviews for movers?
+    - Are reviews on Tingsapp moderated for authenticity, especially about movers?
+    - Does Tingsapp have any measures in place to prevent fake reviews about movers?
+    - How does Tingsapp make sure reviews are not fake?
+    - How does Tingsapp protect against fraudulent reviews for movers?
+    - Are all movers’ reviews genuine on Tingsapp?
+    - How does Tingsapp check if reviews are real?
+    - What does Tingsapp do to prevent fake reviews from appearing?
+
+- intent: negative_review_handling
+  examples: |
+    - What should I do if I had a bad experience with Tingsapp?
+    - How does Tingsapp handle negative reviews?
+    - Can I file a complaint if I had an issue with my mover?
+    - How can I escalate a bad experience with my mover?
+    - What happens after I leave a bad review for my mover?
+    - How can I express dissatisfaction with my mover’s service?
+    - How does Tingsapp deal with negative reviews about movers?
+    - If I had a poor experience with my mover, how can Tingsapp help me?
+    - Does Tingsapp take action based on negative reviews about movers?
+    - Can I request a follow-up for a negative experience with a mover?
+    - Can I contact support if I’m unhappy with my mover?
+    - How will Tingsapp address my complaint?
+    - What should I do if my mover was unprofessional?
+    - Can I expect compensation for a bad experience with my mover?
+    - How long will it take to resolve a complaint about my mover?
+
+- intent: positive_review_handling
+  examples: |
+    - How does Tingsapp respond to positive reviews?
+    - Will Tingsapp acknowledge my positive feedback for my mover?
+    - What happens when I leave a good review for my mover?
+    - Does Tingsapp appreciate positive reviews about movers?
+    - How can I get rewarded for a good review about my mover?
+    - Will Tingsapp recognize my positive review of my mover?
+    - Does Tingsapp follow up on positive reviews regarding movers?
+    - How does Tingsapp celebrate positive feedback about movers?
+    - Will I receive a thank-you note for leaving a positive review for my mover?
+    - Does Tingsapp make improvements based on positive feedback about movers?
+    - How can I thank a great mover through Tingsapp?
+    - Can my positive review help improve the service of other movers?
+    - How does Tingsapp use positive reviews to improve the service?
+    - Can a good review benefit my mover in the long run?
+    - How does Tingsapp encourage movers through positive feedback?
+
+- intent: movers_support
+  examples: |
+    - How can I get support as a Tingsapp mover?
+    - How do I contact Tingsapp support as a mover?
+    - What’s the best way to get help from Tingsapp as a mover?
+    - Can I get assistance if I have an issue with my mover account?
+    - Who do I reach out to if I have a problem as a mover on Tingsapp?
+    - Where can I find help with my Tingsapp mover account?
+    - Is there a support team specifically for Tingsapp movers?
+    - How do I report a problem I am facing as a Tingsapp mover?
+    - Can I talk to a Tingsapp representative if I need help with my job as a mover?
+    - How do I get technical support as a Tingsapp mover?
+    - What should I do if I face an issue during a move as a Tingsapp mover?
+    - Is there a dedicated contact for movers experiencing issues on Tingsapp?
+    - How can I reach out for support if I’m having trouble with the app as a mover?
+    - How do I access customer support as a Tingsapp mover?
+    - Can I get help from Tingsapp’s support team for moving-related questions?
+
+- intent: partner_termination
+  examples: |
+    - Can my partnership with Tingsapp be terminated?
+    - What could cause Tingsapp to end a partnership agreement?
+    - How do I terminate my partnership with Tingsapp?
+    - Can I cancel my participation in Tingsapp's affiliate program?
+    - Are there penalties for terminating a Tingsapp partnership early?
+    - What happens if my partnership with Tingsapp is terminated?
+    - Can I reapply to become a Tingsapp partner after termination?
+    - How do I know if my partnership status with Tingsapp is at risk?
+    - Will I still receive commission after my partnership is terminated?
+    - Are there consequences for failing to meet partnership expectations?
+    - How do I end my agreement with Tingsapp?
+    - Can Tingsapp terminate my partnership without notice?
+    - What reasons would lead to a partnership termination with Tingsapp?
+    - What steps do I need to follow to cancel my Tingsapp partnership?
+    - Will I lose all benefits if my partnership with Tingsapp is terminated?
+
+- intent: account_login
+  examples: |
+    - How do I log in to my account?
+    - Can I use my phone number to log in?
+    - How do I access my account through the app?
+    - What is the process for logging in to my account?
+    - Can I log in using my registered email?
+    - How do I verify my login to access my account?
+    - Is there an option to log in via the website?
+    - What do I need to log in to my account?
+    - Can I log in using the app and website with the same credentials?
+    - How do I log in if I forget my registered phone number?
+    - What should I do to log in through my email?
+    - Can I log in after verifying my details?
+    - Is phone number verification required for logging in?
+    - How do I access my account on a new device?
+    - Can I log in using my email if I don’t have my phone?
+
+- intent: login_issues
+  examples: |
+    - What should I do if I can’t log in to my account?
+    - Why am I not receiving the one-time passcode?
+    - I’m unable to log in with my email; what should I do?
+    - Why is my phone number not working for login?
+    - How do I fix login issues with the app?
+    - What if I don’t get the passcode on my phone?
+    - My email isn’t recognized when I try to log in; what now?
+    - How do I log in if I’m not getting the passcode on my email?
+    - I can’t log in to my account on the website; what should I check?
+    - What happens if I use an unregistered email for login?
+    - Why is the one-time passcode not coming through?
+    - What should I check if I’m unable to log in to my account?
+    - How can I log in if I no longer have access to my phone number?
+    - What should I do if the app isn’t letting me log in?
+    - How do I resolve issues with receiving the one-time passcode?
+
+- intent: password_reset
+  examples: |
+    - How do I reset my password?
+    - I forgot my password; what should I do?
+    - Can you help me change my password?
+    - What if I don’t remember my password?
+    - How can I reset my password on the app?
+    - Is there an option to recover my password?
+    - How do I reset my login credentials?
+    - What should I do if I can’t reset my password?
+    - Can I update my password through the website?
+    - How can I create a new password for my account?
+    - I need help resetting my password; what steps should I follow?
+    - Where do I go to recover my account password?
+    - Can I reset my password via email?
+    - What if I don’t have access to reset my password?
+    - How do I reset my password if I’ve forgotten it?
+
+- intent: account_update
+  examples: |
+    - How do I update my account information?
+    - Can I change my email address in my account?
+    - How do I update my phone number on Tingsapp?
+    - Where can I edit my profile details?
+    - How can I update my name in my account?
+    - What steps should I follow to update my account details?
+    - Can I update my personal information in the app?
+    - Is it possible to change my account information after signing up?
+    - How do I modify my contact information on Tingsapp?
+    - Can I update my profile settings in the app?
+    - How do I change the details linked to my account?
+    - What if I need to update my email or phone number?
+    - How do I access my profile to edit my information?
+    - Can I make changes to my account settings?
+    - How do I update the details in my Tingsapp profile?
+
+- intent: account_deletion
+  examples: |
+    - How do I delete my account on Tingsapp?
+    - Can I remove my Tingsapp account?
+    - What steps do I take to delete my account?
+    - How can I close my Tingsapp account permanently?
+    - Is there a way to delete my profile on Tingsapp?
+    - How do I cancel and delete my account?
+    - Can I delete my account if I no longer use Tingsapp?
+    - What’s the process for account deletion?
+    - How do I remove my information from Tingsapp?
+    - Can I deactivate my account through the app?
+    - What should I do to delete my account permanently?
+    - How do I ensure my account is fully deleted?
+    - Is it possible to delete my account on my own?
+    - Can I delete my Tingsapp account directly from the app?
+    - What happens if I want to delete my account while a job is pending?
+    - How to delete my account?
+    - I want to delete my account
+    - Delete my account
+    - I no longer need my account. How do I delete it?
+    - Remove my account
+
+- intent: account_verification
+  examples: |
+    - How do I verify my mover account?
+    - What is the process for account verification?
+    - How long does it take to verify my account?
+    - Can I start receiving jobs before my account is verified?
+    - What happens after I submit my documents for verification?
+    - Is account verification necessary to use Moverapp?
+    - Who reviews my account for verification?
+    - Will I be notified when my account is verified?
+    - What should I do if my account is not verified?
+    - How will I know if there’s an issue with my account verification?
+    - Do I need to upload documents to verify my account?
+    - What happens if I miss any required steps for verification?
+    - How can I check the status of my account verification?
+    - Can I contact support to speed up my account verification?
+    - Are there specific requirements for account verification?
+
+- intent: pausing_account
+  examples: |
+    - How do I pause my account temporarily?
+    - Can I stop receiving jobs without deleting my account?
+    - How do I go offline in the app?
+    - What steps do I take to temporarily pause my mover account?
+    - Is there a way to block dates I don’t want to work?
+    - Can I pause my account without contacting support?
+    - How do I set my availability in the app?
+    - What should I do if I want to take a break from receiving job offers?
+    - How can I temporarily disable my mover account?
+    - Can I go offline in the app if I don’t want to receive jobs?
+    - How do I update my calendar for days I’m unavailable?
+    - What’s the easiest way to take a break from jobs?
+    - Can I block certain days on the calendar to avoid getting jobs?
+    - How do I stop job offers for a specific time period?
+    - Can I go back online after pausing my account?
+
+- intent: general_inquiries
+  examples: |
+    - How can I contact customer support?
+    - Is there a way to get help for general questions?
+    - Can I talk to someone about my issue?
+    - Where do I go for general inquiries about your service?
+    - How do I reach the support team for help?
+    - Can I chat with an AI agent for my questions?
+    - What’s the best way to get assistance for a general inquiry?
+    - Is there live chat support available for help?
+    - How do I speak to a human for customer support?
+    - Can I call the support team for general questions?
+    - What number do I call for customer service?
+    - How do I contact support during regular hours?
+    - Is there a way to resolve general inquiries without calling?
+    - Who do I contact for basic questions about the service?
+    - Is there an AI agent to help with my queries?
+
+- intent: issue_resolution
+  examples: |
+    - How do I contact customer support for help with my account?
+    - What’s the best way to get assistance for a specific issue?
+    - How can I reach out to customer service about an order issue?
+    - Is there a way to get help for problems with my account?
+    - Can I talk to someone about an issue with my order?
+    - Who do I contact for account-related inquiries?
+    - Is there a direct number for support with order issues?
+    - How do I resolve an account issue quickly?
+    - What’s the process to report a problem with my order?
+    - Can I call customer support for specific issues?
+    - How do I speak to a human for a detailed issue?
+    - Where can I find help for problems with my account or order?
+    - Is there a customer service phone number for specific inquiries?
+    - What number do I call to report an issue with my order?
+    - Can I call the support team to fix an account issue?
+
+- intent: website
+  examples: |
+    - What should I do if I'm facing a technical issue on the website?
+    - How do I report a technical problem with the website?
+    - Can I get help if I can't access the website properly?
+    - What can I do if the website isn't loading correctly?
+    - How do I contact support if the website is malfunctioning?
+    - What should I do if there’s an error on the website?
+    - How can I reach out if I encounter website issues?
+    - Who do I contact for help with website problems?
+    - Can I call for help if the website isn't functioning right?
+    - What can I do if the website is not responding?
+    - Is there a way to get assistance if the website keeps crashing?
+    - How do I resolve an issue if I'm unable to access the website?
+    - What should I do if I experience glitches on the website?
+    - Who can assist me if I have trouble using the website?
+    - How can I report technical issues with the website?
+
+- intent: app_issues
+  examples: |
+    - What can I do if the app isn’t responding properly?
+    - How do I fix the app if it keeps freezing on my device?
+    - What should I do if the app crashes when I try to open it?
+    - How can I resolve issues with the app not loading?
+    - What can I do if the app is not opening on my phone?
+    - How do I fix lagging or slow performance in the app?
+    - Why is the app not functioning correctly, and how can I fix it?
+    - What can I try if the app is stuck on the loading screen?
+    - How do I resolve problems with the app not syncing or updating?
+    - How can I get the app to work properly again if it keeps freezing?
+    - What should I do if the app won’t start or crashes immediately?
+    - How can I fix issues with the app not responding to touch?
+    - Why is the app not updating or loading new content?
+    - What can I do if the app stops working after an update?
+    - How can I get the app to function normally again?
+
+- intent: error_messages
+  examples: |
+    - Why am I seeing an error message on the website?
+    - What should I do if I get an error message when using the app?
+    - How can I fix a problem when an error message appears on the website?
+    - Is there a solution for an error message that keeps popping up in the app?
+    - Who can I contact if I can't resolve an error message issue myself?
+    - What’s the best way to handle an error message on the site?
+    - How do I resolve errors that show up when I open the app?
+    - Can I fix a website error message by refreshing the page?
+    - What should I try if the app shows an error after reopening it?
+    - Is reinstalling the app helpful for fixing error messages?
+    - How can I prevent error messages from appearing on the app again?
+    - Who do I contact for help if the error message doesn't go away?
+    - Are there troubleshooting steps for a recurring website error?
+    - What should I do if the app keeps crashing with an error message?
+    - Can customer support help with persistent error messages on the site or app?
+
+- intent: reporting_bugs
+  examples: |
+    - How can I report a bug I found on the website?
+    - Where should I report app bugs or glitches?
+    - What’s the process to inform you about a technical issue?
+    - Is there a way to notify you about bugs in the app?
+    - Who should I contact if I encounter a problem using the platform?
+    - Can I report system errors or glitches directly to your support team?
+    - How do I submit a bug report for an issue I found?
+    - What’s the best way to let you know about a problem on the website?
+    - How do I report recurring issues or errors in the app?
+    - Can I call someone to report bugs I encounter?
+    - Is there an email to report technical problems?
+    - How do I notify your team about unexpected system behavior?
+    - What steps should I take to report a malfunction in the app?
+    - Who do I reach out to about bugs disrupting my experience?
+    - How do I get help for a technical glitch on your platform?
+
+- intent: terms
+  examples: |
+    - Where can I find your terms and conditions?
+    - How do I review your terms of service?
+    - Can you provide details about your terms and conditions?
+    - What are the terms of service for using your platform?
+    - Are there specific conditions for using your services?
+    - How do I access the terms and policies for Tingsapp?
+    - What should I know about your platform's terms and conditions?
+    - Is there a document outlining your terms of service?
+    - Can I view your service terms and policies online?
+    - What are the rules for using your website or app?
+    - How do I know the terms before using your service?
+    - Where do I look for information on your platform’s terms and policies?
+    - What should users be aware of regarding your service conditions?
+    - How can I read the legal terms for using your services?
+    - Are there any conditions for booking moves through your app?
+
+- intent: privacy
+  examples: |
+    - Where can I find your privacy policy?
+    - How do you handle my personal information?
+    - What are your policies regarding data privacy?
+    - Can you explain how user data is protected?
+    - How is my information used on your platform?
+    - What steps do you take to secure user data?
+    - Is there a document detailing your privacy practices?
+    - Where can I read your privacy policy?
+    - How do you ensure user information remains confidential?
+    - What are your guidelines for collecting and storing data?
+    - Can I review the information you collect from users?
+    - How can I learn more about your data protection measures?
+    - Are there rules about sharing user data?
+    - Who can I contact for questions about your privacy practices?
+    - What should I know about the privacy policy before using your services?
+
+- intent: legal_issues
+  examples: |
+    - Are there any legal agreements I need to accept before using your service?
+    - What legal terms apply when booking a move on your platform?
+    - How do I know if my usage complies with your service terms?
+    - What legal guidelines should I be aware of for using your services?
+    - Is there a legal document I must agree to before using your app?
+    - Who should I contact for legal concerns about your platform?
+    - How do you handle legal matters for your service?
+    - Where can I find information about your platform’s legal policies?
+    - What are the legal responsibilities for users on your platform?
+    - How do I report legal issues related to your service?
+    - Can I review your legal requirements before signing up?
+    - What should users know legally before engaging with your platform?
+    - Are there any legal disclaimers I should read before using your service?
+    - Who handles legal inquiries or disputes for your company?
+    - What is your stance on legal accountability for service usage?
 
 - intent: out_of_scope
   examples: |
-    - what is the meaning of life?
-    - tell me a joke.
-    - who won the football match yesterday?
-    - can you do my homework?
-    - what's the weather like on Mars?
-
-
+    - What is the meaning of life?
+    - Tell me a joke.
+    - Who won the football match yesterday?
+    - Can you do my homework?
+    - What's the weather like on Mars?
+    - Can you predict the future?
+    - How many stars are in the universe?
+    - What’s the square root of a unicorn?
+    - Tell me a riddle.
+    - What is the secret to happiness?
+    - Where did all the dinosaurs go?
+    - Can you solve world hunger?
+    - Why is the sky blue?
+    - How do I become a superhero?
+    - What’s the best pizza topping?

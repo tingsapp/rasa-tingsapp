@@ -42,7 +42,7 @@
 # class ActionTellTime(Action):
 #     def name(self)->Text:
 #         return 'action_tell_time'
-    
+
 #     def run(self, dispatcher: CollectingDispatcher,
 #             tracker: Tracker,
 #             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
