@@ -1,11 +1,20 @@
 version: '3.1'
 intents:
 - greet
+- greet_and_small_talk
+- ask_assistance
+- apologize
+- general_help
+- expression_thoughtful
+- expression_surprised
+- expression_confused
+- expression_acknowledgement
 - goodbye
 - thank_you
 - who_are_you
 - please_rephrase
 - about_tingsapp
+- more_about_tingsapp
 - tingsapp_story
 - tingsapp_history
 - tingsapp_mission
@@ -20,6 +29,8 @@ intents:
 - why_tingsapp
 - tingsapp_feedback
 - tingsapp_name
+- book_move
+- how_to_book
 - tingsapp_testimonials
 - booking_process
 - order_tracking
@@ -84,20 +95,65 @@ intents:
 
 # entities:
 # - place
-# slots: 
-#   location:
-#     type: text
-#     influence_conversation: true
-#     mappings:
-#       - type: from_entity
-#         entity: place
+
+slots:
+  asked_about_booking:
+    type: bool
+    initial_value: false
+    influence_conversation: true
+    mappings:
+      - type: from_intent
+        intent: "book_move"
+        value: true
 
 responses:
   utter_greet:
-  - text: "How can I assist you today?"
   - text: "Hello! Let me know how I can help."
   - text: "Hey there! I'm here to assist you. What's on your mind?"
-  
+  - text: "Hello! Let me know how I can help." 
+  - text: "Hi there!"
+  - text: "Good day!" 
+
+  utter_greet_and_small_talk:
+  - text: "I'm doing well, thank you! How can I assist you today?" 
+  - text: "I'm fine, thanks. How can I help you?"
+  - text: "I'm good, thanks. What's on your mind?"
+
+  utter_ask_assistance:
+    - text: "I'm here to help! Could you please provide more details about your issue?"
+    - text: "I'd be happy to assist you. What seems to be the problem?"
+    - text: "Of course! Let me know what you need help with."
+
+  utter_apologize:
+    - text: "No problem at all. We all make mistakes!"
+    - text: "That's alright. How can I assist you further?"
+    - text: "No worries! Let me know how I can help you."
+
+  utter_general_help:
+    - text: "Sure! What specific information do you need?"
+    - text: "I'd be happy to guide you. What would you like to know?"
+    - text: "Absolutely. Let me know your query, and I'll help you out."
+
+  utter_expression_thoughtful:  
+    - text: "Gotcha! Let me know if you need help with anything."  
+    - text: "Thinking it over? I'm here when you're ready."  
+    - text: "I see. Let me know if you need clarification."  
+
+  utter_expression_surprised:  
+    - text: "Surprising, isn't it? Let me know if you'd like more details."  
+    - text: "Wow indeed! Anything I can help you with?"  
+    - text: "Seems unexpected! Let me know if you have questions."  
+
+  utter_expression_confused:  
+    - text: "No worries! I'll clarify if needed."  
+    - text: "Let me explain that further if you're confused."  
+    - text: "I can provide more context if you're unsure."  
+
+  utter_expression_acknowledgement:  
+    - text: "Glad we're on the same page!"  
+    - text: "Awesome, let's proceed!"  
+    - text: "Good to know. Let's keep going."  
+
   utter_goodbye:
     - text: "Goodbye! Feel free to reach out if you need help"
     - text: "Goodbye! Have a great day!"
@@ -119,7 +175,12 @@ responses:
     - text: "Tingsapp is a moving platform where you can easily schedule movers for your whole apartment or just a few household items with an upfront price. It's as convenient as booking a ride—quick and affordable."
     - text: "Tingsapp is an easy-to-use platform that connects you with reliable movers in your area. We offer upfront pricing, so you know exactly what your move will cost, and our system ensures that you get the right help for your needs."
     - text: "Tingsapp is designed to simplify moving by providing an easy-to-use platform to book reliable movers for any size job. Whether you’re relocating an entire apartment or just a few household items, Tingsapp makes the process straightforward with upfront pricing and trusted movers."
-    
+  
+  utter_more_about_tingsapp:
+    - text: "You can learn more about Tingsapp by visiting [our website](https://tingsapp.com/about)."
+    - text: "For detailed information about Tingsapp, please check out [this page](https://tingsapp.com/about)."
+    - text: "Visit [tingsapp.com/about](https://tingsapp.com/about) for more information about what we offer."
+
   utter_tingsapp_story:
     - text: "Tingsapp was founded by a group of local movers with over a decade of experience, who wanted to create a more transparent and affordable moving service.Our goal is to make moving easier, more honest, and straightforward for everyone."
     - text: "Tingsapp was started by a group of local movers with over a decade of experience in the industry. We noticed that both customers and movers faced challenges, so we came together to create a more straightforward, affordable, and transparent way to handle moving services."
@@ -194,6 +255,16 @@ responses:
     - text: "The name 'Tingsapp' originates from Jamaican slang, where 'ting' can mean anything. It reflects our mission to handle a wide variety of household needs, starting with moving services."
     - text: "Inspired by Jamaican slang, 'Tingsapp' represents versatility and simplicity. It's about moving 'tings' efficiently and envisioning a future where all household services can be managed in one app."
   
+  utter_book_move:
+    - text: "You can book a move on our website."
+    - text: "Booking a move is easy! Just visit our website and follow the steps."
+    - text: "To get started with booking a move, head over to our website."
+
+  utter_how_to_book:
+    - text: "Go to tingsapp.com and click 'Place Order'."
+    - text: "Visit tingsapp.com and select 'Place Order' to begin your booking."
+    - text: "Simply navigate to tingsapp.com and click on 'Place Order' to start the process."
+
   utter_tingsapp_testimonials:
     - text: "Customers love Tingsapp for its convenience, affordability, and reliability. They appreciate the upfront pricing and the ease of booking, as well as the professionalism of our movers."
     - text: "People feel positive about Tingsapp because we take the stress out of moving. They appreciate the transparency, the friendly movers, and the fast, easy booking process."
@@ -534,10 +605,19 @@ session_config:
 
 actions:
 - utter_greet
+- utter_greet_and_small_talk
+- utter_ask_assistance
+- utter_general_help
+- utter_apologize
+- utter_expression_thoughtful
+- utter_expression_surprised
+- utter_expression_confused
+- utter_expression_acknowledgement
 - utter_goodbye
 - utter_thank_you
 - utter_who_are_you
 - utter_about_tingsapp
+- utter_more_about_tingsapp
 - utter_tingsapp_story
 - utter_tingsapp_history
 - utter_tingsapp_mission
@@ -553,6 +633,8 @@ actions:
 - utter_why_tingsapp
 - utter_tingsapp_feedback
 - utter_tingsapp_name
+- utter_book_move
+- utter_how_to_book
 - utter_booking_process
 - utter_order_tracking
 - utter_move_notifications

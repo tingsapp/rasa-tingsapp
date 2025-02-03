@@ -1,10 +1,50 @@
 version: "3.1"
 
 stories:
-- story: User says hi 
+- story: User greets and asks how are you
   steps:
   - intent: greet
   - action: utter_greet
+
+- story: User greet and ask how are you
+  steps:
+  - intent: greet_and_small_talk 
+  - action: utter_greet_and_small_talk 
+
+- story: User ask assistance
+  steps:
+  - intent: ask_assistance
+  - action: utter_ask_assistance
+
+- story: User apologize
+  steps:
+  - intent: apologize
+  - action: utter_apologize
+
+- story: User ask general questions
+  steps:
+  - intent: general_help
+  - action: utter_general_help
+
+- story: User type thoughtful expression 
+  steps:
+  - intent: expression_thoughtful
+  - action: utter_expression_thoughtful
+
+- story: User type surprised expression 
+  steps:
+  - intent: expression_surprised
+  - action: utter_expression_surprised
+
+- story: User type confused expression
+  steps:
+  - intent: expression_confused
+  - action: utter_expression_confused
+
+- story: User type acknowledgement expression
+  steps:
+  - intent: expression_acknowledgement
+  - action: utter_expression_acknowledgement
 
 - story: User says good bye
   steps:
@@ -25,6 +65,11 @@ stories:
   steps:
   - intent: about_tingsapp
   - action: utter_about_tingsapp
+
+- story: User ask more about tingsapp
+  steps: 
+  - intent: more_about_tingsapp
+  - action: utter_more_about_tingsapp
 
 - story: User ask about tingsapp story
   steps:
@@ -95,10 +140,25 @@ stories:
     - intent: tingsapp_name
     - action: utter_tingsapp_name
 
+- story: first mention of booking a move
+  steps:
+    - intent: book_move
+    - action: utter_book_move
+    - slot_was_set:
+        - asked_about_booking: true
+
+- story: follow-up question on booking process
+  steps:
+    - intent: how_to_book
+    - slot_was_set:
+      - asked_about_booking: true
+    - action: utter_how_to_book
+
 - story: Tingsapp testimonials inquiry
   steps: 
     - intent: tingsapp_testimonials
     - action: utter_tingsapp_testimonials
+
 - story: Order process inquiry
   steps: 
     - intent: booking_process

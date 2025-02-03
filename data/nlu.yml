@@ -21,6 +21,103 @@ nlu:
     - hiya
     - hey hey
     - good day
+- intent: greet_and_small_talk
+  examples: |
+    - how are you?
+    - how's it going?
+    - how are you doing?
+    - how are you today?
+    - how's your day?
+    - Are you okay?
+    - How do you do?
+- intent: ask_assistance
+  examples: |
+    - I have a problem
+    - Please help me
+    - Can you help me
+    - I need assistance
+    - Could you help me with this issue?
+    - What should I do now?
+    - How can I fix this problem?
+    - I'm stuck, please guide me
+    - Is anyone there to assist me?
+    - I need help with my move
+    - Can you guide me on this?
+    - I have a situation, can you assist?
+    - Who can help me?
+    - How do I resolve this issue?
+
+- intent: apologize
+  examples: |
+    - I am sorry
+    - My apologies
+    - Sorry about that
+    - I didn't mean to do that
+    - Please forgive me
+    - Oops, my mistake
+    - I’m sorry for the inconvenience
+    - Excuse me, I made a mistake
+
+- intent: general_help
+  examples: |
+    - I have a problem
+    - please help me
+    - I am sorry
+    - Can you help me
+    - Can you tell me what to do?
+    - I need some information
+    - Please guide me
+    - Can you walk me through this?
+    - What are my options?
+    - I am stacked
+    - I am confused
+    - I don't know what to do
+
+- intent: expression_thoughtful
+  examples: |
+    - hm
+    - hmm
+    - hmm...
+    - hmm?
+    - uh-huh
+    - I see
+    - got it
+
+- intent: expression_surprised
+  examples: |
+    - oh
+    - oh!
+    - oh?
+    - wow
+    - woah
+    - whoa!
+    - really?
+    - no way!
+
+- intent: expression_confused
+  examples: |
+    - uh?
+    - huh?
+    - wait, what?
+    - what?
+    - hmm?
+    - I don't get it
+    - I'm confused
+    - What the hell?
+    - What is going on?
+    - What is happening?
+    - Holly shit!
+
+- intent: expression_acknowledgement
+  examples: |
+    - ah
+    - ah, got it
+    - ah!
+    - oh, okay
+    - okay then
+    - right
+    - fair enough
+
 - intent: goodbye
   examples: |
     - bye
@@ -75,14 +172,18 @@ nlu:
   examples: |
     - Who are you?
     - What are you?
+    - What's your name?
     - Can you tell me who you are?
     - Who am I talking to?
     - Are you a human?
     - What is your role here?
     - Are you an AI?
     - Tell me about yourself
+    - Can you tell me about yourself?
     - What can you do?
     - What is your purpose?
+    - Who am I talking to?
+    - What are you?
 
 - intent: about_tingsapp
   examples: |
@@ -94,6 +195,15 @@ nlu:
     - What’s the purpose of Tingsapp?
     - What does Tingsapp stand for?
     - What is the idea behind Tingsapp?
+
+- intent: more_about_tingsapp
+  examples: |
+    - Tell me more about tingsapp
+    - I need to know more about tingsapp
+    - Can you share more information about Tingsapp?
+    - Where can I learn more about Tingsapp?
+    - I want to know more about your platform
+    - Share more details about Tingsapp
 
 - intent: tingsapp_story
   examples: |
@@ -288,6 +398,20 @@ nlu:
     - What’s the general opinion on Tingsapp?
     - Can I read customer experiences with Tingsapp?
     - What’s the feedback from people who’ve used Tingsapp?
+
+- intent: book_move
+  examples: |
+    - I want to book a move
+    - I need to schedule a move
+    - How can I book a move?
+    - Can I book a move here?
+
+- intent: how_to_book
+  examples: |
+    - How?
+    - How do I do that?
+    - How can I place an order?
+    - What's the process for booking a move?
 
 - intent: booking_process
   examples: |
@@ -1234,6 +1358,9 @@ nlu:
     - Is there a way to resolve general inquiries without calling?
     - Who do I contact for basic questions about the service?
     - Is there an AI agent to help with my queries?
+    - I need help.
+    - Please help me.
+    - can you help me please.
 
 - intent: issue_resolution
   examples: |
